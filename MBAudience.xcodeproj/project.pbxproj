@@ -13,6 +13,8 @@
 		ECC823EA245055F400578A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC823E8245055F400578A96 /* Main.storyboard */; };
 		ECC823EC245055F600578A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC823EB245055F600578A96 /* Assets.xcassets */; };
 		ECC823EF245055F600578A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC823ED245055F600578A96 /* LaunchScreen.storyboard */; };
+		ECC823FA2450562500578A96 /* MBMetadataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC823F82450562500578A96 /* MBMetadataManager.swift */; };
+		ECC823FB2450562500578A96 /* MBTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC823F92450562500578A96 /* MBTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		ECC823EB245055F600578A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC823EE245055F600578A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECC823F0245055F600578A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC823F82450562500578A96 /* MBMetadataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBMetadataManager.swift; sourceTree = "<group>"; };
+		ECC823F92450562500578A96 /* MBTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,20 @@
 				ECC823E2245055F400578A96 /* AppDelegate.swift */,
 				ECC823E4245055F400578A96 /* SceneDelegate.swift */,
 				ECC823E6245055F400578A96 /* ViewController.swift */,
+				ECC823F7245055FD00578A96 /* MBAudience */,
 				ECC823E8245055F400578A96 /* Main.storyboard */,
 				ECC823EB245055F600578A96 /* Assets.xcassets */,
 				ECC823ED245055F600578A96 /* LaunchScreen.storyboard */,
 				ECC823F0245055F600578A96 /* Info.plist */,
+			);
+			path = MBAudience;
+			sourceTree = "<group>";
+		};
+		ECC823F7245055FD00578A96 /* MBAudience */ = {
+			isa = PBXGroup;
+			children = (
+				ECC823F82450562500578A96 /* MBMetadataManager.swift */,
+				ECC823F92450562500578A96 /* MBTag.swift */,
 			);
 			path = MBAudience;
 			sourceTree = "<group>";
@@ -139,8 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC823E7245055F400578A96 /* ViewController.swift in Sources */,
+				ECC823FA2450562500578A96 /* MBMetadataManager.swift in Sources */,
 				ECC823E3245055F400578A96 /* AppDelegate.swift in Sources */,
 				ECC823E5245055F400578A96 /* SceneDelegate.swift in Sources */,
+				ECC823FB2450562500578A96 /* MBTag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
