@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { git: 'https://github.com/Mumble-SRL/MBAudienceSwift.git', tag: '0.1' }
-  s.source_files = "MBAudience/MBAudience/*.{h,m,swift}", "MBAudience/MBAudience/**/*.{h,m,swift}"
+  s.source_files = "MBAudience/*.{h,m,swift}", "MBAudience/**/*.{h,m,swift}"
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
