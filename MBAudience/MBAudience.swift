@@ -9,12 +9,12 @@
 import UIKit
 import MBurgerSwift
 
-protocol MBAudienceDelegate: class {
-    func audienceDataSent()
-    func audienceDataFailed(error: Error)
+public protocol MBAudienceDelegate: class {
+    public func audienceDataSent()
+    public func audienceDataFailed(error: Error)
 }
 
-class MBAudience: NSObject, MBPluginProtocol {
+public class MBAudience: NSObject, MBPluginProtocol {
     override init() {
         MBAudienceManager.shared.incrementSession()
         MBAudienceManager.shared.updateMetadata()
