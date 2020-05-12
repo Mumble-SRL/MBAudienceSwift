@@ -24,8 +24,8 @@ internal class MBAudienceManager: NSObject {
     override init() {
         super.init()
         NotificationCenter.default.addObserver(self, selector: #selector(endSession), name: UIApplication.willTerminateNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(startSession), name: UIApplication.willEnterForegroundNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(endSession), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillEnterFroreground), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
         
     // MARK: - Location
@@ -194,6 +194,11 @@ internal class MBAudienceManager: NSObject {
             time += -startSessionDate.timeIntervalSinceNow
         }
         return time
+    }
+    
+    @objc func applicationWillEnterFroreground() {
+        startSession()
+        updateMetadata()
     }
 }
 
