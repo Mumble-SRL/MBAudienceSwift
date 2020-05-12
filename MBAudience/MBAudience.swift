@@ -15,7 +15,8 @@ public protocol MBAudienceDelegate: class {
 }
 
 public class MBAudience: NSObject, MBPluginProtocol {
-    override init() {
+    public override init() {
+        super.init()
         MBAudienceManager.shared.incrementSession()
         MBAudienceManager.shared.updateMetadata()
     }
