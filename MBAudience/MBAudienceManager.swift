@@ -17,65 +17,20 @@ internal class MBAudienceManager: NSObject {
     private var locationManager: CLLocationManager?
     private var currentLocation: CLLocationCoordinate2D?
     
-    func setTag(key: String, value: String) { // TODO: save it in db or file
-        var newTags = getTags() ?? []
-        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
-            let tag = newTags[indexFound]
-            tag.value = value
-            newTags[indexFound] = tag
-        } else {
-            newTags.append(MBTag(key: key, value: value))
-        }
-        saveNewTags(tags: newTags)
-        updateMetadata()
-    }
+    weak var delegate: MBAudienceDelegate?
     
-    func removeTag(key: String) { // TODO: save it in db or file
-        var newTags = getTags() ?? []
-        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
-            newTags.remove(at: indexFound)
-        }
-        saveNewTags(tags: newTags)
-        updateMetadata()
-    }
+    var startSessionDate: Date?
     
-    private func saveNewTags(tags: [MBTag]) {
-        let userDefaults = UserDefaults.standard
-        let mappedTags = tags.map({ $0.toDictionary() })
-        userDefaults.set(mappedTags, forKey: "com.mumble.mburger.audience.tags")
+    override init() {
+        super.init()
+        startSession()
+        NotificationCenter.default.addObserver(self, selector: #selector(endSession), name: UIApplication.willTerminateNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(startSession), name: UIApplication.willEnterForegroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(endSession), name: UIApplication.didEnterBackgroundNotification, object: nil)
     }
-    
-    func getTags() -> [MBTag]? {
-        let userDefaults = UserDefaults.standard
-        guard let tags = userDefaults.object(forKey: "com.mumble.mburger.audience.tags") as? [[String: String]] else {
-            return nil
-        }
-        return tags.map({MBTag(dictionary: $0)})
-    }
-    
-    func getTagsAsDictionaries() -> [[String: String]]? {
-        let userDefaults = UserDefaults.standard
-        guard let tags = userDefaults.object(forKey: "com.mumble.mburger.audience.tags") as? [[String: String]] else {
-            return nil
-        }
-        return tags
-    }
-    
-    func setCustomId(_ customId: String?) {
-        let userDefaults = UserDefaults.standard
-        if let customId = customId {
-            userDefaults.set(customId, forKey: "com.mumble.mburger.audience.customId")
-        } else {
-            userDefaults.removeObject(forKey: "com.mumble.mburger.audience.customId")
-        }
-        updateMetadata()
-    }
-    
-    func getCustomId() -> String? {
-        let userDefaults = UserDefaults.standard
-        return userDefaults.object(forKey: "com.mumble.mburger.audience.customId") as? String
-    }
-    
+        
+    // MARK: - Location
+
     func startLocationUpdates() {
         if locationManager == nil {
             locationManager = CLLocationManager()
@@ -99,14 +54,39 @@ internal class MBAudienceManager: NSObject {
     func incrementSession() {
         let userDefaults = UserDefaults.standard
         let session = userDefaults.integer(forKey: "com.mumble.mburger.audience.session")
-        userDefaults.set(session + 1, forKey: "com.mumble.mburger.audience.session")
+        let newSession = session + 1
+        userDefaults.set(newSession, forKey: "com.mumble.mburger.audience.session")
+        let key = sessionDateKey(forSession: newSession)
+        userDefaults.set(Date(), forKey: key)
         userDefaults.synchronize()
+        clearOldSessionValues()
     }
     
     var currentSession: Int {
         return UserDefaults.standard.integer(forKey: "com.mumble.mburger.audience.session")
     }
     
+    private func clearOldSessionValues() {
+        // Clear only the last 3 values, this should be enough because this function will be called at every start, ideally it will find only currentSession - 2
+        let sessionsToClear = [currentSession - 2,
+                               currentSession - 3,
+                               currentSession - 4]
+        for i in sessionsToClear where i >= 0 {
+            UserDefaults.standard.removeObject(forKey: sessionDateKey(forSession: i))
+        }
+    }
+    
+    private func startSessionDate(forSession session: Int) -> Date? {
+        let key = sessionDateKey(forSession: session)
+        let date = UserDefaults.standard.object(forKey: key) as? Date
+        return date
+    }
+    
+    private func sessionDateKey(forSession session: Int) -> String {
+        let sessionString = NSNumber(value: session).stringValue
+        return "com.mumble.mburger.audience.sessionTime.session" + sessionString
+    }
+
     // MARK: - Api
     
     func updateMetadata() {
@@ -130,9 +110,16 @@ internal class MBAudienceManager: NSObject {
                 parameters["app_version"] = version
                 parameters["sessions"] = NSNumber(value: strongSelf.currentSession).stringValue
                 
-                parameters["sessions_time"] = "0" //TODO: implement
-                parameters["last_session"] = "0" //TODO: implement
-                //TODO: mobile user id
+                parameters["sessions_time"] = floor(strongSelf.totalSessionTime())
+                let lastSession = strongSelf.currentSession - 1
+                if let lastSesssionDate = strongSelf.startSessionDate(forSession: lastSession) {
+                    parameters["last_session"] = floor(lastSesssionDate.timeIntervalSince1970)
+                } else {
+                    parameters["last_session"] = 0
+                }
+                if let mobileUserId = strongSelf.getMobileUserId() {
+                    parameters["mobile_user_id"] = mobileUserId
+                }
                 
                 if let customId = strongSelf.getCustomId() {
                     parameters["custom_id"] = customId
@@ -156,9 +143,9 @@ internal class MBAudienceManager: NSObject {
                                      parameters: parameters,
                                      development: MBManager.shared.development,
                                      success: { _ in
-                                        //TODO: call delegate?
-                }) { _ in
-                    //TODO: call delegate?
+                                        strongSelf.delegate?.audienceDataSent()
+                }) { error in
+                    strongSelf.delegate?.audienceDataFailed(error: error)
                 }
             })
         }
@@ -179,11 +166,35 @@ internal class MBAudienceManager: NSObject {
                                  parameters: parameters,
                                  development: MBManager.shared.development,
                                  success: { _ in
-                                    //TODO: call delegate?
-            }) { _ in
-                //TODO: call delegate?
+                                    self.delegate?.audienceDataSent()
+            }) { error in
+                self.delegate?.audienceDataFailed(error: error)
             }
         }
+    }
+    
+    //MARK: - Sessions
+    
+    @objc private func startSession() {
+        if startSessionDate != nil {
+            endSession()
+        }
+        startSessionDate = Date()
+    }
+    
+    @objc private func endSession() {
+        let sessionTime = self.totalSessionTime()
+        UserDefaults.standard.set(sessionTime, forKey: "com.mumble.mburger.audience.sessionTime")
+        startSessionDate = nil
+    }
+    
+    private func totalSessionTime() -> TimeInterval {
+        var time = UserDefaults.standard.double(forKey: "com.mumble.mburger.audience.sessionTime")
+        if let startSessionDate = startSessionDate {
+            print(startSessionDate.timeIntervalSinceNow)
+            time += startSessionDate.timeIntervalSinceNow
+        }
+        return time
     }
 }
 
@@ -198,6 +209,97 @@ extension MBAudienceManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
     }
 }
+
+// MARK: - Data manager
+
+extension MBAudienceManager {
+    // MARK: - Tags
+    
+    func setTag(key: String, value: String) {
+        var newTags = getTags() ?? []
+        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
+            let tag = newTags[indexFound]
+            tag.value = value
+            newTags[indexFound] = tag
+        } else {
+            newTags.append(MBAudienceTag(key: key, value: value))
+        }
+        saveNewTags(tags: newTags)
+        updateMetadata()
+    }
+    
+    func removeTag(key: String) {
+        var newTags = getTags() ?? []
+        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
+            newTags.remove(at: indexFound)
+        }
+        saveNewTags(tags: newTags)
+        updateMetadata()
+    }
+    
+    private func saveNewTags(tags: [MBAudienceTag]) {
+        let userDefaults = UserDefaults.standard
+        let mappedTags = tags.map({ $0.toDictionary() })
+        userDefaults.set(mappedTags, forKey: "com.mumble.mburger.audience.tags")
+    }
+    
+    func getTags() -> [MBAudienceTag]? {
+        let userDefaults = UserDefaults.standard
+        guard let tags = userDefaults.object(forKey: "com.mumble.mburger.audience.tags") as? [[String: String]] else {
+            return nil
+        }
+        return tags.map({MBAudienceTag(dictionary: $0)})
+    }
+    
+    func getTagsAsDictionaries() -> [[String: String]]? {
+        let userDefaults = UserDefaults.standard
+        guard let tags = userDefaults.object(forKey: "com.mumble.mburger.audience.tags") as? [[String: String]] else {
+            return nil
+        }
+        return tags
+    }
+    
+    // MARK: - Custom Id
+
+    func setCustomId(_ customId: String?) {
+        let userDefaults = UserDefaults.standard
+        if let customId = customId {
+            userDefaults.set(customId, forKey: "com.mumble.mburger.audience.customId")
+        } else {
+            userDefaults.removeObject(forKey: "com.mumble.mburger.audience.customId")
+        }
+        updateMetadata()
+    }
+    
+    func getCustomId() -> String? {
+        let userDefaults = UserDefaults.standard
+        return userDefaults.object(forKey: "com.mumble.mburger.audience.customId") as? String
+    }
+
+    // MARK: - Mobile User Id
+
+    func setMobileUserId(_ mobileUserId: Int?) {
+        let userDefaults = UserDefaults.standard
+        if let mobileUserId = mobileUserId {
+            let stringValue = NSNumber(value: mobileUserId).stringValue
+            userDefaults.set(stringValue, forKey: "com.mumble.mburger.audience.mobileUserId")
+        } else {
+            userDefaults.removeObject(forKey: "com.mumble.mburger.audience.mobileUserId")
+        }
+        updateMetadata()
+    }
+    
+    func getMobileUserId() -> Int? {
+        let userDefaults = UserDefaults.standard
+        if let stringValue = userDefaults.object(forKey: "com.mumble.mburger.audience.mobileUserId") as? String {
+            return Int(stringValue)
+        }
+        return nil
+    }
+
+}
+
+// MARK: -
 
 extension Double {
     func truncate(places: Int) -> Double {

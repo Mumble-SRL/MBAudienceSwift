@@ -9,11 +9,18 @@
 import UIKit
 import MBurgerSwift
 
+protocol MBAudienceDelegate: class {
+    func audienceDataSent()
+    func audienceDataFailed(error: Error)
+}
+
 class MBAudience: NSObject, MBPluginProtocol {
     override init() {
         MBAudienceManager.shared.incrementSession()
         MBAudienceManager.shared.updateMetadata()
     }
+
+    // MARK: - Tags
     
     public static func setTag(withKey key: String, value: String) {
         MBAudienceManager.shared.setTag(key: key, value: value)
@@ -22,6 +29,8 @@ class MBAudience: NSObject, MBPluginProtocol {
     public static func removeTag(withKey key: String) {
         MBAudienceManager.shared.removeTag(key: key)
     }
+    
+    // MARK: - Custom id
     
     public static func setCustomId(_ customId: String) {
         MBAudienceManager.shared.setCustomId(customId)
@@ -35,6 +44,22 @@ class MBAudience: NSObject, MBPluginProtocol {
         return MBAudienceManager.shared.getCustomId()
     }
 
+    // MARK: - Mobile user id
+    
+    public static func setMobileUserId(_ mobileUserId: Int) {
+        MBAudienceManager.shared.setMobileUserId(mobileUserId)
+    }
+    
+    public static func removeMobileUserId() {
+        MBAudienceManager.shared.setMobileUserId(nil)
+    }
+    
+    public static func getMobileUserId() -> Int? {
+        return MBAudienceManager.shared.getMobileUserId()
+    }
+
+    // MARK: - Location
+    
     public static func startLocationUpdates() {
         MBAudienceManager.shared.startLocationUpdates()
     }
@@ -43,12 +68,25 @@ class MBAudience: NSObject, MBPluginProtocol {
         MBAudienceManager.shared.stopLocationUpdates()
     }
     
+    // MARK: - Notifications
+    
     public static func didRegisterForRemoteNotifications(withDeviceToken deviceToken: Data) {
         MBAudienceManager.shared.updateMetadata()
     }
     
     public static func didFailToRegisterForRemoteNotifications(withError error: Error) {
         MBAudienceManager.shared.updateMetadata()
+    }
+
+    // MARK: - Delegate
+    
+    public static var delegate: MBAudienceDelegate? {
+        get {
+            return MBAudienceManager.shared.delegate
+        }
+        set {
+            MBAudienceManager.shared.delegate = newValue
+        }
     }
 
 }

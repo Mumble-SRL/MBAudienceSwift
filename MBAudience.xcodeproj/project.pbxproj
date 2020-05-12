@@ -11,14 +11,14 @@
 		ECC82427245090AF00578A96 /* MBAudience.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC82425245090AF00578A96 /* MBAudience.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECC82430245090BA00578A96 /* MBAudience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8241C2450885000578A96 /* MBAudience.swift */; };
 		ECC82431245090BA00578A96 /* MBAudienceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC823F82450562500578A96 /* MBAudienceManager.swift */; };
-		ECC82432245090BA00578A96 /* MBTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC823F92450562500578A96 /* MBTag.swift */; };
+		ECC82432245090BA00578A96 /* MBAudienceTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC823F92450562500578A96 /* MBAudienceTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		114D0072DBFD101BF04EA72E /* Pods-MBAudience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAudience.debug.xcconfig"; path = "Target Support Files/Pods-MBAudience/Pods-MBAudience.debug.xcconfig"; sourceTree = "<group>"; };
 		D4DE027A290A2AB41BAC0A91 /* Pods-MBAudience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAudience.release.xcconfig"; path = "Target Support Files/Pods-MBAudience/Pods-MBAudience.release.xcconfig"; sourceTree = "<group>"; };
 		ECC823F82450562500578A96 /* MBAudienceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBAudienceManager.swift; sourceTree = "<group>"; };
-		ECC823F92450562500578A96 /* MBTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTag.swift; sourceTree = "<group>"; };
+		ECC823F92450562500578A96 /* MBAudienceTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBAudienceTag.swift; sourceTree = "<group>"; };
 		ECC8241C2450885000578A96 /* MBAudience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBAudience.swift; sourceTree = "<group>"; };
 		ECC82423245090AF00578A96 /* MBAudience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBAudience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC82425245090AF00578A96 /* MBAudience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAudience.h; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				ECC82426245090AF00578A96 /* Info.plist */,
 				ECC8241C2450885000578A96 /* MBAudience.swift */,
 				ECC823F82450562500578A96 /* MBAudienceManager.swift */,
-				ECC823F92450562500578A96 /* MBTag.swift */,
+				ECC823F92450562500578A96 /* MBAudienceTag.swift */,
 			);
 			path = MBAudience;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC82431245090BA00578A96 /* MBAudienceManager.swift in Sources */,
-				ECC82432245090BA00578A96 /* MBTag.swift in Sources */,
+				ECC82432245090BA00578A96 /* MBAudienceTag.swift in Sources */,
 				ECC82430245090BA00578A96 /* MBAudience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MBTag: NSObject {
+class MBAudienceTag: NSObject {
     @objc let key: String!
     @objc var value: String!
     
