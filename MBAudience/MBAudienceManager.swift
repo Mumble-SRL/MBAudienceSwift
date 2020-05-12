@@ -23,7 +23,6 @@ internal class MBAudienceManager: NSObject {
     
     override init() {
         super.init()
-        startSession()
         NotificationCenter.default.addObserver(self, selector: #selector(endSession), name: UIApplication.willTerminateNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(startSession), name: UIApplication.willEnterForegroundNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(endSession), name: UIApplication.didEnterBackgroundNotification, object: nil)
@@ -60,6 +59,7 @@ internal class MBAudienceManager: NSObject {
         userDefaults.set(Date(), forKey: key)
         userDefaults.synchronize()
         clearOldSessionValues()
+        startSession()
     }
     
     var currentSession: Int {
@@ -191,8 +191,7 @@ internal class MBAudienceManager: NSObject {
     private func totalSessionTime() -> TimeInterval {
         var time = UserDefaults.standard.double(forKey: "com.mumble.mburger.audience.sessionTime")
         if let startSessionDate = startSessionDate {
-            print(startSessionDate.timeIntervalSinceNow)
-            time += startSessionDate.timeIntervalSinceNow
+            time += -startSessionDate.timeIntervalSinceNow
         }
         return time
     }
