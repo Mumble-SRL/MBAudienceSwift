@@ -10,8 +10,8 @@ import UIKit
 import MBurgerSwift
 
 public protocol MBAudienceDelegate: class {
-    public func audienceDataSent()
-    public func audienceDataFailed(error: Error)
+    func audienceDataSent()
+    func audienceDataFailed(error: Error)
 }
 
 public class MBAudience: NSObject, MBPluginProtocol {
