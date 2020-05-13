@@ -67,7 +67,127 @@
         <section class="section">
           <div class="section-content top-matter">
             
-            
+            <p><img src="https://img.shields.io/badge/documentation-100%25-brightgreen.svg" alt="Test Status">
+<img src="https://img.shields.io/badge/pod-v1.0.2-blue.svg" alt="License: MIT">
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg" alt="CocoaPods"></a></p>
+<h1 id='mbaudienceswift' class='heading'>MBAudienceSwift</h1>
+
+<p>MBAudienceSwift is a plugin libary for <a href="https://mburger.cloud">MBurger</a>, that lets you track user data and behavior inside your and to target messages only to specific users or groups of users. This plugin is often used with the <a href="https://github.com/Mumble-SRL/MBMessagesSwift">MBMessagesSwift</a> plugin to being able to send push and messages only to targeted users.</p>
+<h1 id='installation' class='heading'>Installation</h1>
+<h1 id='installation-with-cocoapods' class='heading'>Installation with CocoaPods</h1>
+
+<p>CocoaPods is a dependency manager for iOS, which automates and simplifies the process of using 3rd-party libraries in your projects. You can install CocoaPods with the following command:</p>
+<pre class="highlight ruby"><code><span class="err">$</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">cocoapods</span>
+</code></pre>
+
+<p>To integrate the MBurgerSwift into your Xcode project using CocoaPods, specify it in your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'12.0'</span>
+
+<span class="n">target</span> <span class="s1">'TargetName'</span> <span class="k">do</span>
+    <span class="n">pod</span> <span class="s1">'MBAudienceSwift'</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>If you use Swift rememember to add <code>use_frameworks!</code> before the pod declaration.</p>
+
+<p>Then, run the following command:</p>
+<pre class="highlight plaintext"><code>$ pod install
+</code></pre>
+
+<p>CocoaPods is the preferred methot to install the library.</p>
+<h1 id='manual-installation' class='heading'>Manual installation</h1>
+
+<p>To install the library manually drag and drop the folder <code><a href="Classes/MBAudience.html">MBAudience</a></code> to your project structure in XCode. </p>
+
+<p>Note that <code>MBAudienceSwift</code> has <code>MBurgerSwift (1.0.5)</code> and <code>MPushSwift (0.2.12)</code> as dependencies, so you have to install also those libraries.</p>
+<h1 id='initialization' class='heading'>Initialization</h1>
+
+<p>To initialize the SDK you have to add <code><a href="Classes/MBAudience.html">MBAudience</a></code> to the array of plugins of <code>MBurger</code>.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">MBurgerSwift</span>
+<span class="kd">import</span> <span class="kt">MBMessagesSwift</span>
+
+<span class="o">...</span>
+
+<span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplicationLaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+
+    <span class="kt">MBManager</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">apiToken</span> <span class="o">=</span> <span class="s">"YOUR_API_TOKEN"</span>
+    <span class="kt">MBManager</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">plugins</span> <span class="o">=</span> <span class="p">[</span><span class="kt">MBAudience</span><span class="p">()]</span>
+
+    <span class="k">return</span> <span class="kc">true</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>You can set a delegate when initializing the <code><a href="Classes/MBAudience.html">MBAudience</a></code> plugin, the delegate will be called when audience data are sent successfully to the sever or if the sync fails</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">audiencePlugin</span> <span class="o">=</span> <span class="kt">MBAudience</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="p">[</span><span class="n">the</span> <span class="n">delegate</span><span class="p">])</span>
+</code></pre>
+<h1 id='tracked-data' class='heading'>Tracked data</h1>
+
+<p>Below are described all the data that are tracked by the MBAudience SDK and that you will be able to use from the <a href="https://mburger.cloud">MBurger</a> dashboard. Most of the data are tracked automatically, for a couples a little setup by the app is neccessary.</p>
+
+<ul>
+<li><strong>app_version</strong>: The current version of the app.</li>
+<li><strong>locale</strong>: The locale of the phone, the value returned by <code>Locale.preferredLanguages.first</code>.</li>
+<li><strong>sessions</strong>: An incremental number indicating the number of time the user opens the app, this number is incremented at each startup.</li>
+<li><strong>sessions_time</strong>: The total time the user has been on the app, this time is paused when the app goes in background (using <code>didEnterBackgroundNotification</code>) .and it&rsquo;s resumed when the app re-become active (using <code>willEnterForegroundNotification</code>).</li>
+<li><strong>last_session</strong>: The start date of the last session.</li>
+<li><strong>push_enabled</strong>: If push notifications are enabled or not; to determine this value the framework uses this function: <code>UNUserNotificationCenter.current().getNotificationSettings</code>.</li>
+<li><strong>location_enabled</strong>: If user has given permissions to use location data or not; this is true if <code>CLLocationManager.authorizationStatus()</code> is <code>authorizedAlways</code> or <code>authorizedWhenInUse</code>.</li>
+<li><strong>mobile_user_id</strong>: The user id of the user curently logged in MBurger</li>
+<li><strong>custom_id</strong>: A custom id that can be used to filter further.</li>
+<li><strong>tags</strong>: An array of tags</li>
+<li><strong>latitude, longitude</strong>: The latitude and longitude of the last place visited by this device</li>
+</ul>
+<h2 id='tags' class='heading'>Tags</h2>
+
+<p>You can set tags to assign to a user/device (e.g. if user has done an action set a tag), so you can target those users later:</p>
+
+<p>To set a tag:</p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">setTag</span><span class="p">(</span><span class="nv">withKey</span><span class="p">:</span> <span class="s">"KEY"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="s">"VALUE"</span><span class="p">)</span>
+</code></pre>
+
+<p>To remove it:</p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">removeTag</span><span class="p">(</span><span class="nv">withKey</span><span class="p">:</span> <span class="s">"KEY"</span><span class="p">)</span>
+</code></pre>
+<h2 id='custom-id' class='heading'>Custom Id</h2>
+
+<p>You can set a custom id in order to track/target users with id coming from different platforms. </p>
+
+<p>To set a custom id:</p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">setCustomId</span><span class="p">(</span><span class="s">"CUSTOM_ID"</span><span class="p">)</span>
+</code></pre>
+
+<p>To remove it:</p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">removeCustomId</span><span class="p">()</span>
+</code></pre>
+
+<p>To retrieve the current saved id:</p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">getCustomId</span><span class="p">()</span>
+</code></pre>
+<h2 id='mobile-user-id' class='heading'>Mobile User Id</h2>
+
+<p>This is the id of the user currently logged in MBurger using MBAuth. At the moment the mobile user id is not sent automatically when a user log in/log out with MBAuth. It will be implemented in the future but at the moment you have to set and remove it manually when the user completes the login flow and when he logs out.</p>
+
+<p>To set the mobile user id:</p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">setMobileUserId</span><span class="p">(</span><span class="kt">MOBILE_USER_ID</span><span class="p">)</span>
+</code></pre>
+
+<p>To remove it, if the user logs out:</p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">removeMobileUserId</span><span class="p">()</span>
+</code></pre>
+
+<p>To get the currently saved mobile user id: </p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">getMobileUserId</span><span class="p">()</span>
+</code></pre>
+<h2 id='location-data' class='heading'>Location Data</h2>
+
+<p>MBAudience let you track and target user based on their location, the framework uses the method <a href="https://developer.apple.com/documentation/corelocation/cllocationmanager/1423531-startmonitoringsignificantlocati">startMonitoringSignificantLocationChanges</a> of the CoreLocation manager with an accuracy of <code>kCLLocationAccuracyHundredMeters</code>. To start monitoring for location changes call, it will continue monitoring until the stop method is called:</p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">startLocationUpdates</span><span class="p">()</span>
+</code></pre>
+
+<p>To stop monitoring location changes you have to call:</p>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">stopLocationUpdates</span><span class="p">()</span>
+</code></pre>
+
           </div>
         </section>
 
