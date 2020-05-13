@@ -145,3 +145,15 @@ MBAudience.getMobileUserId()
 ```
 
 ## Location Data
+
+MBAudience let you track and target user based on their location, the framework uses the method [startMonitoringSignificantLocationChanges](https://developer.apple.com/documentation/corelocation/cllocationmanager/1423531-startmonitoringsignificantlocati) of the CoreLocation manager with an accuracy of `kCLLocationAccuracyHundredMeters`. To start monitoring for location changes call, it will continue monitoring until the stop method is called:
+
+```swift
+MBAudience.startLocationUpdates()
+```
+
+To stop monitoring location changes you have to call:
+
+```swift
+MBAudience.stopLocationUpdates()
+```
