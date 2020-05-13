@@ -124,4 +124,24 @@ MBAudience.getCustomId()
 
 ## Mobile User Id
 
+This is the id of the user currently logged in MBurger using MBAuth. At the moment the mobile user id is not sent automatically when a user log in/log out with MBAuth. It will be implemented in the future but at the moment you have to set and remove it manually when the user completes the login flow and when he logs out.
+
+To set the mobile user id:
+
+```swift
+MBAudience.setMobileUserId(MOBILE_USER_ID)
+```
+
+To remove it, if the user logs out:
+
+```swift
+MBAudience.removeMobileUserId()
+```
+
+To get the currently saved mobile user id: 
+
+```swift
+MBAudience.getMobileUserId()
+```
+
 ## Location Data
