@@ -1,0 +1,25 @@
+clean: true
+objc: false
+readme: Readme.md
+framework_root: MBAudience
+module: MBAudience
+module_version: 0.1
+sdk: iphonesimulator
+
+xcodebuild_arguments:
+    - "-workspace"
+    - "MBAudience.xcworkspace"
+    - "-scheme"
+    - "MBAudience"
+
+author: Mumble
+author_url: https://mumbleideas.it/
+github_url: https://github.com/Mumble-SRL/MBAudienceSwift
+
+theme: fullwidth
+
+custom_categories:
+  - name: MBAudience
+    children:
+    - MBAudience
+    - MBAudienceDelegate

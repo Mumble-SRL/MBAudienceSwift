@@ -108,6 +108,9 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
+  spec.framework = "UserNotifications"
+  spec.framework = "CoreLocation"
+
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

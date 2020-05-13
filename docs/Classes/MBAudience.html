@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MBAudience Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/MBAudience" class="dashAnchor"></a>
+
+    <a title="MBAudience Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          MBAudience 0.1 Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Mumble-SRL/MBAudienceSwift">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">MBAudience Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      MBAudience Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../MBAudience.html">MBAudience</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MBAudience.html">MBAudience</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MBAudienceDelegate.html">MBAudienceDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MBAudience</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MBAudience</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">MBPluginProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>This is the plugin class for MBurger that implements the audience functionality, you can use this to target content to specific users or groups of users, based on their in app behavior. Audience data are updated at every startup, and when the app enters foreground, using the <code>applicationWillEnterFroreground</code> notification</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC8delegateAbA0A8Delegate_pSg_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC8delegateAbA0A8Delegate_pSg_tcfc">init(delegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the plugin and do the startup work, increment the session and update the metadata. You can optionally pass a delegate that will be informed when the data are sent successfully or if the data sync fails.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MBAudienceDelegate.html">MBAudienceDelegate</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional delegate that will be informed when the data are sent successfully or if the data sync fails.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Tags"></a>
+                <a name="//apple_ref/swift/Section/Tags" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Tags"></a>
+                  <h3 class="section-name"><p>Tags</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC6setTag7withKey5valueySS_SStFZ"></a>
+                    <a name="//apple_ref/swift/Method/setTag(withKey:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC6setTag7withKey5valueySS_SStFZ">setTag(withKey:<wbr>value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the tag with a key and a value, if a tag with that key already exists its value is replaced by the new value. After setting the new tag the new audience data are sent to the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">setTag</span><span class="p">(</span><span class="n">withKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key of the tag.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value of the tag.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC9removeTag7withKeyySS_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/removeTag(withKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC9removeTag7withKeyySS_tFZ">removeTag(withKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the tag with the specified key and syncs audience data with the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">removeTag</span><span class="p">(</span><span class="n">withKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key of the tag that needs to be removed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Custom%20id"></a>
+                <a name="//apple_ref/swift/Section/Custom id" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Custom%20id"></a>
+                  <h3 class="section-name"><p>Custom id</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC11setCustomIdyySSFZ"></a>
+                    <a name="//apple_ref/swift/Method/setCustomId(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC11setCustomIdyySSFZ">setCustomId(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set a custom id that will be sent with the audience data, this can be used if  you want to target users coming from different platforms from <code>MBurger</code>. After setting this id the new audience data are sent to the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">setCustomId</span><span class="p">(</span><span class="n">_</span> <span class="nv">customId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>customId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The custom id, this value is saved and will be sent until <code>removeCustomId</code> is called.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC14removeCustomIdyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/removeCustomId()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC14removeCustomIdyyFZ">removeCustomId()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the custom id and sync audience data to the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">removeCustomId</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC11getCustomIdSSSgyFZ"></a>
+                    <a name="//apple_ref/swift/Method/getCustomId()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC11getCustomIdSSSgyFZ">getCustomId()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves the current saved custom id.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getCustomId</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The current saved custom id.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Mobile%20user%20id"></a>
+                <a name="//apple_ref/swift/Section/Mobile user id" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Mobile%20user%20id"></a>
+                  <h3 class="section-name"><p>Mobile user id</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC15setMobileUserIdyySiFZ"></a>
+                    <a name="//apple_ref/swift/Method/setMobileUserId(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC15setMobileUserIdyySiFZ">setMobileUserId(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the mobile user id of the user currently logged in MBurger. After setting this id the new audience data are sent to the server.</p>
+
+<p>NOTE: The mobile user id is not sent automatically when a user log in/log out with MBAuth. It will be implemented in the future but at the moment you have to set and remove it manually.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">setMobileUserId</span><span class="p">(</span><span class="n">_</span> <span class="nv">mobileUserId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mobileUserId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The mobile user id, this value is saved and will be sent until <code>removeMobileUserId</code> is called.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC18removeMobileUserIdyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/removeMobileUserId()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC18removeMobileUserIdyyFZ">removeMobileUserId()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the mobile user id and sync audience data to the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">removeMobileUserId</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC15getMobileUserIdSiSgyFZ"></a>
+                    <a name="//apple_ref/swift/Method/getMobileUserId()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC15getMobileUserIdSiSgyFZ">getMobileUserId()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves the current saved mobile user id.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getMobileUserId</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The current saved mobile user id.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Location"></a>
+                <a name="//apple_ref/swift/Section/Location" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Location"></a>
+                  <h3 class="section-name"><p>Location</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC20startLocationUpdatesyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/startLocationUpdates()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC20startLocationUpdatesyyFZ">startLocationUpdates()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start collecting location data and to send it to the server. MBAudience uses <code>startMonitoringSignificantLocationChanges</code> of CoreLocation with an accuracy of <code>kCLLocationAccuracyHundredMeters</code>. To stop collecting location data call <code>stopLocationUpdates</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">startLocationUpdates</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC19stopLocationUpdatesyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/stopLocationUpdates()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC19stopLocationUpdatesyyFZ">stopLocationUpdates()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop collecting location data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">stopLocationUpdates</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Notifications"></a>
+                <a name="//apple_ref/swift/Section/Notifications" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Notifications"></a>
+                  <h3 class="section-name"><p>Notifications</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC33didRegisterForRemoteNotifications15withDeviceTokeny10Foundation4DataV_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/didRegisterForRemoteNotifications(withDeviceToken:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC33didRegisterForRemoteNotifications15withDeviceTokeny10Foundation4DataV_tFZ">didRegisterForRemoteNotifications(withDeviceToken:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calling this function when your app delegate receives <code>didRegisterForRemoteNotifications</code> will trigger an update of the metadata, so the value of the field <code>push_enabled</code> will be always fresh.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">didRegisterForRemoteNotifications</span><span class="p">(</span><span class="n">withDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The device token returned by <code>didRegisterForRemoteNotifications</code> (Not used at the moment).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC39didFailToRegisterForRemoteNotifications9withErrorys0J0_p_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/didFailToRegisterForRemoteNotifications(withError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC39didFailToRegisterForRemoteNotifications9withErrorys0J0_p_tFZ">didFailToRegisterForRemoteNotifications(withError:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calling this function when your app delegate receives <code>didFailToRegisterForRemoteNotifications</code> will trigger an update of the metadata, so the value of the field <code>push_enabled</code> will be always fresh.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">didFailToRegisterForRemoteNotifications</span><span class="p">(</span><span class="n">withError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error returned by <code>didFailToRegisterForRemoteNotifications</code> (Not used at the moment).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Delegate"></a>
+                <a name="//apple_ref/swift/Section/Delegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Delegate"></a>
+                  <h3 class="section-name"><p>Delegate</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10MBAudienceAAC8delegateAA0A8Delegate_pSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10MBAudienceAAC8delegateAA0A8Delegate_pSgvpZ">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The delegate of the <code>MBAudience</code> plugin, it will receive function calls when audience data are sent successfully or if they fail to sync with the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MBAudienceDelegate.html">MBAudienceDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-05-13)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
