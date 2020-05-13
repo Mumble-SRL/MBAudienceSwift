@@ -66,7 +66,6 @@ You can set a delegate when initializing the `MBAudience` plugin, the delegate w
 
 ```swift
 let audiencePlugin = MBAudience(delegate: [the delegate])
-
 ```
 
 # Tracked data
@@ -87,7 +86,41 @@ Below are described all the data that are tracked by the MBAudience SDK and that
 
 ## Tags
 
+You can set tags to assign to a user/device (e.g. if user has done an action set a tag), so you can target those users later:
+
+
+To set a tag:
+
+```swift
+MBAudience.setTag(withKey: "KEY", value: "VALUE")
+```
+
+To remove it:
+
+```swift
+MBAudience.removeTag(withKey: "KEY")
+```
+
 ## Custom Id
+
+You can set a custom id in order to track/target users with id coming from different platforms. 
+
+To set a custom id:
+
+```swift
+MBAudience.setCustomId("CUSTOM_ID")
+```
+To remove it:
+
+```swift
+MBAudience.removeCustomId()
+```
+
+To retrieve the current saved id:
+
+```swift
+MBAudience.getCustomId()
+```
 
 ## Mobile User Id
 
