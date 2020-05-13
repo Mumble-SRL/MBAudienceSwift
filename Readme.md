@@ -69,3 +69,26 @@ let audiencePlugin = MBAudience(delegate: [the delegate])
 
 ```
 
+# Tracked data
+
+Below are described all the data that are tracked by the MBAudience SDK and that you will be able to use from the [MBurger](https://mburger.cloud) dashboard. Most of the data are tracked automatically, for a couples a little setup by the app is neccessary.
+
+- **app_version**: The current version of the app.
+- **locale**: The locale of the phone, the value returned by `Locale.preferredLanguages.first`.
+- **sessions**: An incremental number indicating the number of time the user opens the app, this number is incremented at each startup.
+- **sessions_time**: The total time the user has been on the app, this time is paused when the app goes in background (using `didEnterBackgroundNotification`) .and it's resumed when the app re-become active (using `willEnterForegroundNotification`).
+- **last_session**: The start date of the last session.
+- **push_enabled**: If push notifications are enabled or not; to determine this value the framework uses this function: `UNUserNotificationCenter.current().getNotificationSettings`.
+- **location_enabled**: If user has given permissions to use location data or not; this is true if `CLLocationManager.authorizationStatus()` is `authorizedAlways` or `authorizedWhenInUse`.
+- **mobile_user_id**: The user id of the user curently logged in MBurger
+- **custom_id**: A custom id that can be used to filter further.
+- **tags**: An array of tags
+- **latitude, longitude**: The latitude and longitude of the last place visited by this device
+
+## Tags
+
+## Custom Id
+
+## Mobile User Id
+
+## Location Data
