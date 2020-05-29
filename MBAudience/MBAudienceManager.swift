@@ -48,6 +48,11 @@ internal class MBAudienceManager: NSObject {
         }
     }
     
+    func setCurrentLocation(latitude: Double, longitude: Double) {
+        currentLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        updateLocation()
+    }
+    
     // MARK: - Sessions
     
     func incrementSession() {

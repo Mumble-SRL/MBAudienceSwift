@@ -104,6 +104,14 @@ public class MBAudience: NSObject, MBPluginProtocol {
         MBAudienceManager.shared.stopLocationUpdates()
     }
     
+    /// Updates current user location with the parameters passed and calls the api to update the device data.
+    /// - Parameters:
+    ///   - latitude: Current latitude
+    ///   - longitude: Current longitude
+    public static func setCurrentLocation(latitude: Double, longitude: Double) {
+        MBAudienceManager.shared.setCurrentLocation(latitude: latitude, longitude: longitude)
+    }
+
     // MARK: - Notifications
     
     /// Calling this function when your app delegate receives `didRegisterForRemoteNotifications` will trigger an update of the metadata, so the value of the field `push_enabled` will be always fresh.
