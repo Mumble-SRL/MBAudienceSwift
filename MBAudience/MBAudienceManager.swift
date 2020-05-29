@@ -116,9 +116,9 @@ internal class MBAudienceManager: NSObject {
                 parameters["sessions"] = NSNumber(value: strongSelf.currentSession).stringValue
                 
                 parameters["sessions_time"] = floor(strongSelf.totalSessionTime())
-                let lastSession = strongSelf.currentSession - 1
-                if let lastSesssionDate = strongSelf.startSessionDate(forSession: lastSession) {
-                    parameters["last_session"] = floor(lastSesssionDate.timeIntervalSince1970)
+                let currentSession = strongSelf.currentSession
+                if let currentSessionDate = strongSelf.startSessionDate(forSession: currentSession) {
+                    parameters["last_session"] = floor(currentSessionDate.timeIntervalSince1970)
                 } else {
                     parameters["last_session"] = 0
                 }
