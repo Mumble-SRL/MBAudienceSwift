@@ -20,7 +20,7 @@ public protocol MBAudienceDelegate: class {
 }
 
 /// This is the plugin class for MBurger that implements the audience functionality, you can use this to target content to specific users or groups of users, based on their in app behavior. Audience data are updated at every startup, and when the app enters foreground, using the `applicationWillEnterFroreground` notification
-public class MBAudience: NSObject, MBPluginProtocol {
+public class MBAudience: NSObject, MBPlugin {
     
     /// Initializes the plugin and do the startup work, increment the session and update the metadata. You can optionally pass a delegate that will be informed when the data are sent successfully or if the data sync fails.
     /// - Parameters:

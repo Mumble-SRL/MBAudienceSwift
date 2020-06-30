@@ -23,7 +23,7 @@ public final class MBManager {
     public var development: Bool = false
     
     /// An array of plugin objects that can add functionality to the core MBurger.
-    public var plugins: [MBPluginProtocol] = []
+    public var plugins: [MBPlugin] = []
     
     /// The locale used to make the requests.
     public var locale: Locale?
@@ -50,6 +50,12 @@ public final class MBManager {
         let localeIdentifier = locale.identifier
         let index = localeIdentifier.index(localeIdentifier.startIndex, offsetBy: 2)
         return String(localeIdentifier.prefix(upTo: index))
+    }
+    
+    public func applicationDidFinishLaunchingWithOptions(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
+        
+        MBPluginsManager.handlePluginStartup(plugins: plugins,
+                                             launchOptions: launchOptions)        
     }
 }
 
