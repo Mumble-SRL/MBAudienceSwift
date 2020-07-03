@@ -160,13 +160,16 @@ internal class MBAudienceManager: NSObject {
         guard let currentLocation = currentLocation else {
             return
         }
+        
+        MBPluginsManager.locationDataUpdated(latitude: currentLocation.latitude,
+                                             longitude: currentLocation.longitude)
         var parameters = [String: AnyHashable]()
         parameters["latitude"] = currentLocation.latitude.truncate(places: 8)
         parameters["longitude"] = currentLocation.longitude.truncate(places: 8)
         DispatchQueue.global(qos: .utility).async {
             MBApiManager.request(withToken: MBManager.shared.apiToken,
                                  locale: MBManager.shared.localeString,
-                                 apiName: "devices",
+                                 apiName: "locations",
                                  method: .post,
                                  parameters: parameters,
                                  development: MBManager.shared.development,
