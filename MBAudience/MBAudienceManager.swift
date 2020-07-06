@@ -227,22 +227,22 @@ extension MBAudienceManager: CLLocationManagerDelegate {
 extension MBAudienceManager {
     // MARK: - Tags
     
-    func setTag(key: String, value: String) {
+    func setTag(_ tag: String, value: String) {
         var newTags = getTags() ?? []
-        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
+        if let indexFound = newTags.firstIndex(where: {$0.tag == tag}) {
             let tag = newTags[indexFound]
             tag.value = value
             newTags[indexFound] = tag
         } else {
-            newTags.append(MBAudienceTag(key: key, value: value))
+            newTags.append(MBAudienceTag(tag: tag, value: value))
         }
         saveNewTags(tags: newTags)
         updateMetadata()
     }
     
-    func removeTag(key: String) {
+    func removeTag(_ tag: String) {
         var newTags = getTags() ?? []
-        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
+        if let indexFound = newTags.firstIndex(where: {$0.tag == tag}) {
             newTags.remove(at: indexFound)
         }
         saveNewTags(tags: newTags)

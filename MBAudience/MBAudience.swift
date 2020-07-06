@@ -36,17 +36,17 @@ public class MBAudience: NSObject, MBPlugin {
     
     /// Set the tag with a key and a value, if a tag with that key already exists its value is replaced by the new value. After setting the new tag the new audience data are sent to the server.
     /// - Parameters:
-    ///   - key: The key of the tag.
+    ///   - tag: The tag.
     ///   - value: The value of the tag.
-    public static func setTag(withKey key: String, value: String) {
-        MBAudienceManager.shared.setTag(key: key, value: value)
+    public static func setTag(_ tag: String, value: String) {
+        MBAudienceManager.shared.setTag(tag, value: value)
     }
     
     /// Removes the tag with the specified key and syncs audience data with the server.
     /// - Parameters:
     ///   - key: The key of the tag that needs to be removed.
-    public static func removeTag(withKey key: String) {
-        MBAudienceManager.shared.removeTag(key: key)
+    public static func removeTag(_ tag: String) {
+        MBAudienceManager.shared.removeTag(tag)
     }
     
     // MARK: - Custom id
