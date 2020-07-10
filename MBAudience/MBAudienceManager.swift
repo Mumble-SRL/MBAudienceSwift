@@ -81,7 +81,7 @@ internal class MBAudienceManager: NSObject {
         }
     }
     
-    private func startSessionDate(forSession session: Int) -> Date? {
+    internal func startSessionDate(forSession session: Int) -> Date? {
         let key = sessionDateKey(forSession: session)
         let date = UserDefaults.standard.object(forKey: key) as? Date
         return date

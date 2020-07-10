@@ -128,6 +128,16 @@ public class MBAudience: NSObject, MBPlugin {
         MBAudienceManager.shared.updateMetadata()
     }
 
+    /// Returns the current session tracked by `MBAudience`
+    public static func currentSession() -> Int {
+        return MBAudienceManager.shared.currentSession
+    }
+    
+    /// The date of the last session
+    public static func startSessionDate(forSession session: Int) -> Date? {
+        return MBAudienceManager.shared.startSessionDate(forSession: session)
+    }
+
     // MARK: - Delegate
     
     /// The delegate of the `MBAudience` plugin, it will receive function calls when audience data are sent successfully or if they fail to sync with the server.
