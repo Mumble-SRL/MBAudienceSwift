@@ -238,6 +238,7 @@ extension MBAudienceManager {
         }
         saveNewTags(tags: newTags)
         updateMetadata()
+        MBPluginsManager.tagChanged(tag: tag, value: value)
     }
     
     func removeTag(_ tag: String) {
@@ -247,6 +248,7 @@ extension MBAudienceManager {
         }
         saveNewTags(tags: newTags)
         updateMetadata()
+        MBPluginsManager.tagChanged(tag: tag, value: nil)
     }
     
     private func saveNewTags(tags: [MBAudienceTag]) {
