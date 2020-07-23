@@ -63,7 +63,6 @@ public class MBAudience: NSObject, MBPlugin {
         MBAudienceManager.shared.setCustomId(nil)
     }
     
-    
     /// Retrieves the current saved custom id.
     /// - Returns: The current saved custom id.
     public static func getCustomId() -> String? {

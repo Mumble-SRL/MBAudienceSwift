@@ -149,9 +149,9 @@ internal class MBAudienceManager: NSObject {
                                      development: MBManager.shared.development,
                                      success: { _ in
                                         strongSelf.delegate?.audienceDataSent()
-                }) { error in
+                }, failure: { error in
                     strongSelf.delegate?.audienceDataFailed(error: error)
-                }
+                })
             })
         }
     }
@@ -175,13 +175,13 @@ internal class MBAudienceManager: NSObject {
                                  development: MBManager.shared.development,
                                  success: { _ in
                                     self.delegate?.audienceDataSent()
-            }) { error in
+            }, failure: { error in
                 self.delegate?.audienceDataFailed(error: error)
-            }
+            })
         }
     }
     
-    //MARK: - Sessions
+    // MARK: - Sessions
     
     @objc private func startSession() {
         if startSessionDate != nil {

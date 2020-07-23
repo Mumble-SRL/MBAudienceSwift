@@ -1,33 +1,23 @@
 PODS:
-  - MBNetworkingSwift (1.0.10)
-  - MBurgerSwift (1.0.5):
+  - MBNetworkingSwift (1.0.14)
+  - MBurgerSwift (1.0.7):
     - MBNetworkingSwift
-    - SAMKeychain
-  - SAMKeychain (1.5.3)
 
 DEPENDENCIES:
-  - "MBurgerSwift (from `git@github.com:Mumble-SRL/MBurgerSwift.git`, branch `develop`)"
+  - MBurgerSwift (from `../MBurgerSwift`)
 
 SPEC REPOS:
   trunk:
     - MBNetworkingSwift
-    - SAMKeychain
 
 EXTERNAL SOURCES:
   MBurgerSwift:
-    :branch: develop
-    :git: "git@github.com:Mumble-SRL/MBurgerSwift.git"
-
-CHECKOUT OPTIONS:
-  MBurgerSwift:
-    :commit: 1c59a48670d45bc73146c79a4b1b343e4ee5380f
-    :git: "git@github.com:Mumble-SRL/MBurgerSwift.git"
+    :path: "../MBurgerSwift"
 
 SPEC CHECKSUMS:
-  MBNetworkingSwift: 293afd6c2a20e9d242204ad3a868f44fa7d8e23f
-  MBurgerSwift: 9da24875a175995993a9658f68e7d40c87d7a3bc
-  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  MBNetworkingSwift: e24b93be41ce4fb9247fb902bf5db2877e73a446
+  MBurgerSwift: 0a5324876000a1703965b2ba20495423157691df
 
-PODFILE CHECKSUM: 449d9a9dd3518920612913890bc62361a2ba2132
+PODFILE CHECKSUM: ea657b37190fce8ffc1fb5fa0a7772d699d24c60
 
 COCOAPODS: 1.9.3
