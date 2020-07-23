@@ -7,88 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0227A4EAEA32A0AB94F1579DCF059F69 /* MBMulitpartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF938F952C84F0DBBC7B63B4359E14 /* MBMulitpartFormData.swift */; };
-		0302587B8F92E3C9E41E4895AFA1C840 /* MBUserContractStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38FD9DAE55F6779534849F7F4B4C7F /* MBUserContractStatus.swift */; };
+		00A8AAD322D6959ED1782A3C1B76433B /* MBTextElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1C5837E09750166B6B9A46FB584CE /* MBTextElement.swift */; };
+		0227A4EAEA32A0AB94F1579DCF059F69 /* MBMulitpartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF3354A6C483BF25A0AB09199F9422 /* MBMulitpartFormData.swift */; };
 		08718819AB72A9CB2E53C3135F6C63B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A0660399E29CC2664F1A5A545FBE2E /* Foundation.framework */; };
 		0AF48F146F64034BBD34F97BA7EB665F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7698BD2D9AE9E98EA92BDD0DB4CE3E8E /* Security.framework */; };
-		0B720447EE3BD243A4FB885B1F7CF38D /* MBPaginationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DD85B67544DD419D5D6F45ECB96577 /* MBPaginationParameter.swift */; };
-		14AEC1F3D3076EF0BEEE112A1B9DCD8C /* MBDropdownElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE4F4E26101A5AA1D1F68F7934FD25B /* MBDropdownElement.swift */; };
-		1759FC8326E4EC1FA52684E42BE24B24 /* MBProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53D5A02EEC806CE4D892632E97DD533 /* MBProject.swift */; };
-		1A427932D0E1764F82F1EA5026A22323 /* MBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DBD520A369A4150241038DA60EF293 /* MBPlugin.swift */; };
-		1B60153B704E4032A810F500EF4133A4 /* MBAddressElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240CA515BD6B68EB2CA3C49B592F29BC /* MBAddressElement.swift */; };
-		214110B989A8AC74ED8398773E03F3D1 /* MBParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708DD76B12C475DF55EB77D20C07C504 /* MBParameters.swift */; };
-		2167032E13F97BBDD9A68C2827056CEB /* MBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84A7CF46858283B79970A2D91EC29A7 /* MBClient.swift */; };
-		22B70A32FA6EE4D7B09C14D52BDE423B /* MBElementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C3FDD68F2564BDDF9375E675E022D6 /* MBElementProtocol.swift */; };
-		282615B1459B96024B5E65D0F47A9B99 /* MBValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7372D40E32F1843F24A5B8E62406779 /* MBValidation.swift */; };
-		28EBAE0A4ECF4C8D8902DFAF5ED0AADB /* MBImagesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2AA594D2A31435D960BC0AAB16B306 /* MBImagesElement.swift */; };
-		3576F36F4408D5D855AE3B495E4838E7 /* MBGeneralParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D0DE1D8EB49666D9E78A8A56318B3 /* MBGeneralParameter.swift */; };
-		3C6F69B5A8BC38C3835F3E7BC1290C8C /* MBAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B118B0D20DF702F5E92C88FD4262378C /* MBAuth.swift */; };
-		4C1CC47DC0C33F8F1CD53A66D324BD2E /* MBElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACE3E1E589237335D0FCFF2EA66636 /* MBElement.swift */; };
-		58CB1C76CA4E431E05A07183CC1D8E04 /* MBDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7A77402666775CD49F4FC70EBBF08 /* MBDecodable.swift */; };
-		5929003DCBD45B040D78F5C52AFAC2CA /* MBGeneralElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C692B4348B077A325FDAD707EBA17 /* MBGeneralElement.swift */; };
-		5FC243CBD7FE3586731990C97E80D195 /* MBMarkdownElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC2BD7C9FDF4A2663A821D3D2AC1F72 /* MBMarkdownElement.swift */; };
-		6276AAB33B4ACE8BF12633A7A19DE1E4 /* MBMultipleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4190407B94ECDB1C2947E74F9AD450 /* MBMultipleElement.swift */; };
+		0DD9170A57BEE3FC689E882B07F225EA /* MBGeofenceParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A8B8DDA9EFB816F5685C177A32D2C /* MBGeofenceParameter.swift */; };
+		0E1D6DA4CAC063703DD7849915E63BF8 /* MBLegalContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284F4DEFFDFED240DE07B57D276E4EDF /* MBLegalContract.swift */; };
+		13D022EBD6FD0334607283517D3C7273 /* MBSortParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681619528FCFC97365C0B292CEEC1D10 /* MBSortParameter.swift */; };
+		14C31438270FC08A4F78D985ABC1AED9 /* MBDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6902999BBE45C412F519AEC05D17DD6B /* MBDecoder.swift */; };
+		156044746F509732FEFF758B0672A6DA /* MBPaginationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3EC51DBAC0E32FDA67F2E86C8B67A /* MBPaginationParameter.swift */; };
+		214110B989A8AC74ED8398773E03F3D1 /* MBParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120CF645D15FB5D216D8E6912E45A85A /* MBParameters.swift */; };
+		282615B1459B96024B5E65D0F47A9B99 /* MBValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7521840C3C152388FFEA5C6C938829 /* MBValidation.swift */; };
+		2870308DDA78E76BD51EDDBBC4B06FCC /* MBCheckboxElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353AECF5CE57403B3BD06A42C20B04F4 /* MBCheckboxElement.swift */; };
+		317F2BF2145207523BBBCE0DF1296FE0 /* MBApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094ABC42225593B8B6E69CE337ABE502 /* MBApiManager.swift */; };
+		3396E36B2D0CB16356BB27FD8330884A /* MBUserContractStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4A60CD2CFEAF5255A95BE862B1141 /* MBUserContractStatus.swift */; };
+		369A849D62DCF911E644D1AF5A5D3FFA /* MBurgerTokenKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31248B99B5DE4985A7E6FFE4BA78B973 /* MBurgerTokenKeychain.swift */; };
+		44E8B02A4595736B5DB7A61B852BD98F /* MBColorElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAF69A2E83B63D9DBF0B39912C6C86 /* MBColorElement.swift */; };
+		4BF999983A98A45F70DDFBB4C2260600 /* MBElementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFCF8EFB4387884716C98AFC9C1B38 /* MBElementFactory.swift */; };
+		4C5F78EC39DF6CEC92DA3F67F96B8EBC /* MBAddressElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C09E903A858F20EB5FEE00B8A5604B /* MBAddressElement.swift */; };
+		5D5554FB2B98427A26EB08C118FC0B85 /* MBProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB6D33A75FB1BEEF8D9048299438ECF /* MBProject.swift */; };
 		66DBFF03252EF9A3C2D97E69294FB079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A0660399E29CC2664F1A5A545FBE2E /* Foundation.framework */; };
-		68BC39B1E2B43441E6F6597D473CFD39 /* MBurgerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B651628FBB764B439A6EE9467B734AA1 /* MBurgerSwift-dummy.m */; };
-		6EC95C904863DB89F6FB447952D1812A /* MBParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A1AA45FF51EABF13BE255748A2611 /* MBParameter.swift */; };
-		6FF60EB594547532F003F366CE378921 /* MBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BE50401115854B26C1F7DA796178D /* MBError.swift */; };
-		6FF760CF0FEFA320AE61FFC9D8B48809 /* MBNetworkingSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD1CDE69BE0D686C5ACB8C4C45B7ACC /* MBNetworkingSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7744E7073353EE8400CB6C81F9169D72 /* MBNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BE5CC46DBB9221C36815491007423B /* MBNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F3CE874E1BE5EF091E3E39725E0478A /* MBNetworkingSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B6EA6B5A05EF33AEEF065525E18B /* MBNetworkingSwift-dummy.m */; };
-		834050A34D594CFF08F9D2BEA1758A91 /* MBCheckboxElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF719D436AACB408DF7D1E1A31C55E2 /* MBCheckboxElement.swift */; };
-		83924D4B719DF2D2B726219C0CC640F0 /* MBUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46DF0695DE6CF2D02C182CBCD813FD /* MBUtilities.swift */; };
-		8961111ECD9BDFFBB84FB9EE9B2E63F8 /* MBApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BCC1451ED15AAE3FBAA2B4D1F69A70 /* MBApiManager.swift */; };
-		8CD0D62BB36CDDB22F151B0BC232F436 /* MBDateElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB682FCDF20F6EA0F439E2150D184104 /* MBDateElement.swift */; };
-		8E98133F6486A0EE61A736CD49CB972C /* MBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180E159BD1EF37D8F80BC6E8335086E /* MBFile.swift */; };
-		91E69A0D2221D1F55FF5B462CE86A2BC /* MBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C859903619A386FD37B93E9D3D1C90 /* MBUser.swift */; };
-		92824D01C0D009FC4E44195957BC3ED3 /* MBBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724CEB698CF0543C6B95D0435F806D7 /* MBBlock.swift */; };
-		9330E439B35F1E6E0645D5A7DB7CE48C /* MBColorElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B67AC03CA13F67D2D7A449742B9145 /* MBColorElement.swift */; };
-		99D5E6CECE5A0D36EACCEA54E5780A2F /* MBPaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D70C3538DD7CBE7F65E3BCE05FB0AD /* MBPaginationInfo.swift */; };
+		6AC6D729712ADB2CC0CA88BB9B0EAE06 /* MBRelationElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4884E368D7BC58EA06F750DE2790D12 /* MBRelationElement.swift */; };
+		6FB45713B540AB804C4ED79DCE0DEB03 /* MBPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2561249A313AAABD9CB46B92D87F14 /* MBPlugin.swift */; };
+		6FF60EB594547532F003F366CE378921 /* MBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734986C155DFFE2E4E0F83A2FD3142A /* MBError.swift */; };
+		6FF760CF0FEFA320AE61FFC9D8B48809 /* MBNetworkingSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E392831C7F189553A3EBA67D23C325B7 /* MBNetworkingSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7744E7073353EE8400CB6C81F9169D72 /* MBNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCC2811604E7365A1103F29DD0B7034 /* MBNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F3CE874E1BE5EF091E3E39725E0478A /* MBNetworkingSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42491129D5A9BDC1D9ED609D101FE000 /* MBNetworkingSwift-dummy.m */; };
+		84A6D4437F40FB98FA769C72B13CCE89 /* MBUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25AD5A5592AB4D667FE16951B31BFA1 /* MBUtilities.swift */; };
+		8545CF50400FC2B204C74BD960E80483 /* MBMultipleElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68360BCBA52ABEA328E44BBB04FD4A0 /* MBMultipleElement.swift */; };
+		89D6BD85AAF830B94BE579C89C889100 /* MBDropdownElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7083F23E28D46394AD602568A01C680 /* MBDropdownElement.swift */; };
+		8A7EB1D7ECDC0F8569291DCEF2362949 /* MBAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB226AC6D2868680458D793773DFDD /* MBAuth.swift */; };
+		9564F4C9D75BF14A086EC20079D40E8B /* MBDateElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2567F853B1EA8AAEC9384C8677CE6079 /* MBDateElement.swift */; };
+		9927E93C8055976389207499FEDEE2A0 /* MBElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282D314D10C95982C6E004AF495D94B5 /* MBElement.swift */; };
+		9DF41AA8F1ECAE49551049C28297F29F /* MBGeneralParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573CCCA791E83750F7738BD0C73B471 /* MBGeneralParameter.swift */; };
 		9E74CFFB760844F8C17B32A1572A64F7 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2BF2679C4800463E56F9A726CA5D02 /* CoreServices.framework */; };
-		A2A9F4D3D1749DA505253EEEF02027E5 /* MBurgerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = B562EE941C2228FAE5BE773BC974838A /* MBurgerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8D696564B1C39C3A05B6B6891A8B0A2 /* MBurgerTokenKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E60E502294358C0576223801347D978 /* MBurgerTokenKeychain.swift */; };
-		AF1D6254EAD27CDB271F4B5F0547430C /* MBSortParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B34DF6F7A07A6FDE91DF3408D8C23 /* MBSortParameter.swift */; };
-		B7628ED423D0687FE5F814B7F583C738 /* MBGeofenceParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B338944DA627A79CAD085FA5FD5CA78 /* MBGeofenceParameter.swift */; };
+		A22E5CFF5B024B39CF49973C6BD92DB2 /* MBPollElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E12732B966494BC9370DABC6C3C32 /* MBPollElement.swift */; };
+		A2A9F4D3D1749DA505253EEEF02027E5 /* MBurgerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C3DF8C9B436AF4C693081012375D65 /* MBurgerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5256FAA71CA083EB98B687C23827399 /* MBUserPublishedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F23EA993572467F4E277677FE3D46 /* MBUserPublishedSection.swift */; };
+		A66626CAE0AA95DAB81CD516D5B5465F /* MBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0E0A04BE203DFA562015C16CB74A4 /* MBUser.swift */; };
+		B1FF5D45AAB8D953AC62F193C8DC64D0 /* MBMediaElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630B4BCB582B75BF3FEA369F1E3B2264 /* MBMediaElement.swift */; };
+		B6130782C3294BAA212F9A48F196B7B6 /* MBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF67A14E7797343780DB63993F585ACF /* MBManager.swift */; };
+		BC3A9A95A2076D370156CAA82CB89D4F /* MBImagesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FF41B011E777AB7018928B96DD2AE /* MBImagesElement.swift */; };
 		BE3C4603650A4DD807B744E9222B71F1 /* Pods-MBAudience-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8DF6FC654FFEFAA8E0C7C6B8DE3BA5 /* Pods-MBAudience-dummy.m */; };
-		BE6F9EFF540A68119C41290AFF908802 /* MBFilterParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ADD1524DDBC3936F6A3F288AF4FEA5 /* MBFilterParameter.swift */; };
-		BF0B1CC892251CC2010E4F7144E91280 /* MBNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227C519F1F30B9101DE003AD2D238B49 /* MBNetworking.swift */; };
-		C9CBF38BFFC47E4EA25D4C0DA2F85750 /* MBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE7B99E13A40217AF852D52ACF5298 /* MBResponse.swift */; };
-		CAE13D059C0590A820E821559C079624 /* MBElementFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C67611A8AE1E7C6C0B26AC2E9EDA62 /* MBElementFactory.swift */; };
-		D0E914175C578A4D40CFAE3AD6CE356A /* MBUserPublishedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20903814D9D7D233A6F041E26EA9E25 /* MBUserPublishedSection.swift */; };
-		D2E65346CFE7C04CFB64055915CD48E5 /* MBPluginsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60192D65FFC5160E1443FF0F35DCD3 /* MBPluginsManager.swift */; };
-		DA612838516F4CBE9A561FEAFDECEC9E /* MBurgerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCE4733C28FEE504197BD30DF0013306 /* MBurgerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF701654F8393726DA338D835AD8362C /* MBLegalContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600A5958E9F5867CA3EADDB944C0377 /* MBLegalContract.swift */; };
-		E13863B316B3CC30510714694E6AEEA2 /* MBDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E70D1FAA6824D922201FD1A05D6856 /* MBDecoder.swift */; };
+		BF0B1CC892251CC2010E4F7144E91280 /* MBNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9051CF869E07729E83B0F0AC61A08A2E /* MBNetworking.swift */; };
+		C60BBF3AF00645DE53845BB18F188BEF /* MBFilterParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72771D63F773FD5FCC7405B7CEA2F0D /* MBFilterParameter.swift */; };
+		C63D0613B1D999DBF077FD04DA3CAE4C /* MBDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE1C16B43DC795B25C8C1F7FB1C9EF /* MBDecodable.swift */; };
+		C9CBF38BFFC47E4EA25D4C0DA2F85750 /* MBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C7E3D6E3F65442CDEFDFE5ED6921BC /* MBResponse.swift */; };
+		D84F11127B06960E412848D906192903 /* MBMarkdownElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27CDAB7BF38821A29FFF4DBA406F27 /* MBMarkdownElement.swift */; };
+		DA612838516F4CBE9A561FEAFDECEC9E /* MBurgerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2165804F4649425C4D00977D476F32D5 /* MBurgerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2D2A6C4A7FD712A5313005C595A8389 /* MBNetworkingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A7CD41DE7541E6F20650DF511688B4 /* MBNetworkingSwift.framework */; };
+		E368C02D471B864735771772E8930A77 /* MBurgerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 800322BB757039E2A018DD4DB6E6C4E9 /* MBurgerSwift-dummy.m */; };
+		E40ED1554512DA892AB4F82B9F944F6D /* MBSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA119AB0F8AA6FA4C8F615D71092DAA7 /* MBSection.swift */; };
 		E4B367996AD7D0033FC220A79BF29225 /* Pods-MBAudience-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCDBB59564B08ACA11028068D7C6A572 /* Pods-MBAudience-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E53D985351B08559238EE50056D3998C /* MBAuthContractAcceptanceParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE9B1F77BB7427A27F1FBCC6768F51 /* MBAuthContractAcceptanceParameter.swift */; };
-		EB7CF9DEF89B0C7BE06B30BF940A70A2 /* MBSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3185562A4E050714A3CEE93AF2F3E8C /* MBSection.swift */; };
-		EB9F8619AEEA2C85528D38A12A3F2133 /* MBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484008E8F528A66FE2ECA72C7F0B7F4A /* MBManager.swift */; };
-		ED36D0665A13E3B5D3F8EF64AD7E4C04 /* MBResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD1712632394EBFA9BE6CAC6C58249 /* MBResult.swift */; };
-		F15B34EEA1DFA5376FFEA4AC90FE2BB4 /* MBRelationElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7358CF68935A35617FAEF84F784A009 /* MBRelationElement.swift */; };
-		F363DC82259119EFB6DCDDF09292B82F /* MBTextElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E3A7404EC7BED9ECB1E365F24A3D00 /* MBTextElement.swift */; };
-		F5554DF0A0A937ED27F36C49AACD856F /* MBMediaElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11B07488F534E15DCE68143E6C5A1A7 /* MBMediaElement.swift */; };
+		E54E000780333C40CFEAC144E9EA8A75 /* MBGeneralElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C71A2CE47F34D3E626A39C575251F9 /* MBGeneralElement.swift */; };
+		E603F5C152CE01618E90FE72B7F6C401 /* MBBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F6D653A953E392A4BC20E0335C1C94 /* MBBlock.swift */; };
+		EC4F54001D20F19A0449704166F5AB71 /* MBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69438F9B2C614050C94C305D9B2E07 /* MBClient.swift */; };
+		ED36D0665A13E3B5D3F8EF64AD7E4C04 /* MBResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697F5BCCB19F6C64C542E8A521A450D2 /* MBResult.swift */; };
+		EEB1239A2C52224CE3207B65EF566BF2 /* MBPluginsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850DEB75FBCB2A392108DD54D5568526 /* MBPluginsManager.swift */; };
+		EFE901DEFB658030B188D2E5FBD7B546 /* MBParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A9C26165FB100A39A97A5BEABF9AA7 /* MBParameter.swift */; };
 		F7A518B3FCDB330855833E2843158D18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A0660399E29CC2664F1A5A545FBE2E /* Foundation.framework */; };
-		F9695234D62072C91FE43FDEFC4B2B15 /* MBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734B5099B8ABC8B888D184F9307B79FD /* MBRequest.swift */; };
-		FD5C967AAA287C0040BD5BFD2E1B2767 /* MBPollElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8277BD5E3F1E7D3BF0D9C99829184CC4 /* MBPollElement.swift */; };
+		F9695234D62072C91FE43FDEFC4B2B15 /* MBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9978BF96144F0CBBA5F5B1A2806748D /* MBRequest.swift */; };
+		FCD0DC7D8860348C3C89261668EA3220 /* MBAuthContractAcceptanceParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE335EB3058E5852F5A062069EC459B1 /* MBAuthContractAcceptanceParameter.swift */; };
+		FD70ED0E372C817152CE3388BD48CAC1 /* MBPaginationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68FB30A3C00BD5C0D1F3E7355DE14A4 /* MBPaginationInfo.swift */; };
+		FE62A8218B048B045A32983537909FB8 /* MBElementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D15EBFE5FFE17A2CFA76D69E658756 /* MBElementProtocol.swift */; };
+		FF1D5C7AF0A4E54E3EA306E79CD16C9C /* MBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DAE81A19630C46F213E000C6D69B9D /* MBFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		591D9F8DD8BB6D41FC7165C067558198 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DBD1EB833A242D1B4C867B0058BA435;
-			remoteInfo = MBurgerSwift;
-		};
-		74AC35B70548F7A09995CAF6BD2CD8F7 /* PBXContainerItemProxy */ = {
+		80884B9AF951686DE26FDB2F198E7A99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 761641A2390A4CA7AEB55C51CA789C90;
 			remoteInfo = MBNetworkingSwift;
 		};
-		BA586D2587A5FE6CD65C882DB2B9B5EA /* PBXContainerItemProxy */ = {
+		CA84A4CF2CC4A6719D4C1B42D6251C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DBD1EB833A242D1B4C867B0058BA435;
+			remoteInfo = MBurgerSwift;
+		};
+		E595CC667B99E6D4ABB21FAAD118BF58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -98,244 +98,88 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		013329E16E1709C4FDC7267CB0AB6AAC /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
-		03808F37C0B81818E8C0BE7CE7008523 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
-		03DE9B1F77BB7427A27F1FBCC6768F51 /* MBAuthContractAcceptanceParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBAuthContractAcceptanceParameter.swift; sourceTree = "<group>"; };
-		043D0DE1D8EB49666D9E78A8A56318B3 /* MBGeneralParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBGeneralParameter.swift; sourceTree = "<group>"; };
-		04CB3E3BDD85EFD6DC02ECDF833D1B2D /* MBBlock.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBBlock.html; path = docs/MBBlock.html; sourceTree = "<group>"; };
-		0630DE68678AE241D53ADF43960AF357 /* MBAuthContractAcceptanceParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAuthContractAcceptanceParameter.html; path = docs/Classes/MBAuthContractAcceptanceParameter.html; sourceTree = "<group>"; };
-		06B45570FE6624ECC0AC461C95FCC121 /* MBElementFactory.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElementFactory.html; path = docs/Structs/MBElementFactory.html; sourceTree = "<group>"; };
-		0C83B6EA6B5A05EF33AEEF065525E18B /* MBNetworkingSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBNetworkingSwift-dummy.m"; sourceTree = "<group>"; };
-		0CF5D74BD0B5BA5FD1EA8CAB8244BBEC /* MBUserContractStatus.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUserContractStatus.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBUserContractStatus.html; sourceTree = "<group>"; };
-		0EA3B4631A71FE12C3C32166235E565F /* MBLegalContract.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBLegalContract.html; path = docs/Structs/MBLegalContract.html; sourceTree = "<group>"; };
-		0F87DFF326BA9148100C7E6DEC87FAFD /* MBFile.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBFile.html; path = docs/Classes/MBFile.html; sourceTree = "<group>"; };
-		1177290B1A356CF42B83177CBCB9DF5D /* MBurgerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBurgerSwift-Info.plist"; sourceTree = "<group>"; };
-		12811E2BE89BA4B6B862BF1A14A256B2 /* MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBurgerSwift.debug.xcconfig; sourceTree = "<group>"; };
-		1537F55BC1CF8DDC4246E83A12E61E3F /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
-		156A1B733C21ECF34523010A727356ED /* MBColorElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBColorElement.html; path = docs/Classes/MBColorElement.html; sourceTree = "<group>"; };
+		0573CCCA791E83750F7738BD0C73B471 /* MBGeneralParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBGeneralParameter.swift; path = MBurgerSwift/MBParameter/MBGeneralParameter.swift; sourceTree = "<group>"; };
+		06FFCF8EFB4387884716C98AFC9C1B38 /* MBElementFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBElementFactory.swift; path = MBurgerSwift/MBElement/MBElementFactory.swift; sourceTree = "<group>"; };
+		074E12732B966494BC9370DABC6C3C32 /* MBPollElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPollElement.swift; path = MBurgerSwift/MBElement/MBPollElement.swift; sourceTree = "<group>"; };
+		094ABC42225593B8B6E69CE337ABE502 /* MBApiManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBApiManager.swift; path = MBurgerSwift/MBManager/MBApiManager.swift; sourceTree = "<group>"; };
+		0D27CDAB7BF38821A29FFF4DBA406F27 /* MBMarkdownElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBMarkdownElement.swift; path = MBurgerSwift/MBElement/MBMarkdownElement.swift; sourceTree = "<group>"; };
+		120CF645D15FB5D216D8E6912E45A85A /* MBParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBParameters.swift; path = MBNetworkingSwift/MBParameters.swift; sourceTree = "<group>"; };
 		16A7CD41DE7541E6F20650DF511688B4 /* MBNetworkingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBNetworkingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		16C1DB49BCCD2CEC08B0DCB31352653D /* MBSection.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBSection.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBSection.html; sourceTree = "<group>"; };
-		173CF0979BC68C4C5C0FCD7B0778280D /* MBElementProtocol.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElementProtocol.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Protocols/MBElementProtocol.html; sourceTree = "<group>"; };
-		18FB7D969F601C052324F6638ECC0806 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
-		19E70D1FAA6824D922201FD1A05D6856 /* MBDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBDecoder.swift; sourceTree = "<group>"; };
-		1B1BE50401115854B26C1F7DA796178D /* MBError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBError.swift; path = MBNetworkingSwift/MBError.swift; sourceTree = "<group>"; };
-		1C5EAF67B5E402FFA5323D87B124C248 /* MBElementType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElementType.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Enums/MBElementType.html; sourceTree = "<group>"; };
-		1CF54025B2B80C385514FDBD01530B4F /* MBApiManager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBApiManager.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBApiManager.html; sourceTree = "<group>"; };
-		20C9068B0BCFCED0BF2ED3FB25EDDB05 /* MBPaginationParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPaginationParameter.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBPaginationParameter.html; sourceTree = "<group>"; };
-		20DBD520A369A4150241038DA60EF293 /* MBPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBPlugin.swift; sourceTree = "<group>"; };
-		227C519F1F30B9101DE003AD2D238B49 /* MBNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBNetworking.swift; path = MBNetworkingSwift/MBNetworking.swift; sourceTree = "<group>"; };
-		22B75CB76249C695FE8FA7F048B99E4F /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
-		23163BE8184F4A1DD6E3355C321B5808 /* MBAuth.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAuth.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBAuth.html; sourceTree = "<group>"; };
-		240CA515BD6B68EB2CA3C49B592F29BC /* MBAddressElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBAddressElement.swift; sourceTree = "<group>"; };
-		25A8174D5E084613C5C5E4BD84AB9C9B /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
-		25CCCCDC44AE34AC334B335628D6C26F /* MBDateElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDateElement.html; path = docs/Classes/MBDateElement.html; sourceTree = "<group>"; };
-		26C3FDD68F2564BDDF9375E675E022D6 /* MBElementProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBElementProtocol.swift; sourceTree = "<group>"; };
+		1734986C155DFFE2E4E0F83A2FD3142A /* MBError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBError.swift; path = MBNetworkingSwift/MBError.swift; sourceTree = "<group>"; };
+		183FF41B011E777AB7018928B96DD2AE /* MBImagesElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBImagesElement.swift; path = MBurgerSwift/MBElement/MBImagesElement.swift; sourceTree = "<group>"; };
+		2165804F4649425C4D00977D476F32D5 /* MBurgerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBurgerSwift-umbrella.h"; sourceTree = "<group>"; };
+		2567F853B1EA8AAEC9384C8677CE6079 /* MBDateElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDateElement.swift; path = MBurgerSwift/MBElement/MBDateElement.swift; sourceTree = "<group>"; };
 		272B313EDF1D627516441590396A8506 /* Pods-MBAudience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBAudience.release.xcconfig"; sourceTree = "<group>"; };
-		285AEEAD1154D56A90E045A7B681E2C4 /* MBClient.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBClient.html; path = docs/MBClient.html; sourceTree = "<group>"; };
+		282D314D10C95982C6E004AF495D94B5 /* MBElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBElement.swift; path = MBurgerSwift/MBElement/MBElement.swift; sourceTree = "<group>"; };
+		284F4DEFFDFED240DE07B57D276E4EDF /* MBLegalContract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBLegalContract.swift; path = MBurgerSwift/MBProject/MBLegalContract.swift; sourceTree = "<group>"; };
 		28FF4BBF82C1FCB6CB6C0980A65F4A8C /* Pods_MBAudience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MBAudience.framework; path = "Pods-MBAudience.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		29DD85B67544DD419D5D6F45ECB96577 /* MBPaginationParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBPaginationParameter.swift; sourceTree = "<group>"; };
-		2ACD1712632394EBFA9BE6CAC6C58249 /* MBResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBResult.swift; path = MBNetworkingSwift/MBResult.swift; sourceTree = "<group>"; };
-		2DB122FA790065DC7973E562ED801B90 /* MBLegalContract.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBLegalContract.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBLegalContract.html; sourceTree = "<group>"; };
-		2DD1CDE69BE0D686C5ACB8C4C45B7ACC /* MBNetworkingSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBNetworkingSwift-umbrella.h"; sourceTree = "<group>"; };
-		2FB81AC0BFEFD7A900F5C7BEFFC64067 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
-		300506C9C02CA3327AB21F076C05DE70 /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/js/jazzy.search.js; sourceTree = "<group>"; };
-		30D10608BC8273DF27D2BDDCCD4FE9F9 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
-		3171D012E1C609C338618549AFE90BAA /* MBPluginsManager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPluginsManager.html; path = docs/Classes/MBPluginsManager.html; sourceTree = "<group>"; };
+		2FB6D33A75FB1BEEF8D9048299438ECF /* MBProject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBProject.swift; path = MBurgerSwift/MBProject/MBProject.swift; sourceTree = "<group>"; };
+		31248B99B5DE4985A7E6FFE4BA78B973 /* MBurgerTokenKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBurgerTokenKeychain.swift; path = MBurgerSwift/MBAuth/MBurgerTokenKeychain.swift; sourceTree = "<group>"; };
 		317C42D6BB11FFDF58B1B1743963B344 /* MBNetworkingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBNetworkingSwift.framework; path = MBNetworkingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		338E2E4ECE040A5FF274B92AAA1B4A9E /* MBurgerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBurgerSwift.release.xcconfig; sourceTree = "<group>"; };
 		33A0660399E29CC2664F1A5A545FBE2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		344944155C50CAF2EFFFBC89EA352983 /* MBPollElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPollElement.html; path = docs/Classes/MBPollElement.html; sourceTree = "<group>"; };
-		376A879F8937677C69AE34B3BF2D347A /* MBUtilities.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUtilities.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBUtilities.html; sourceTree = "<group>"; };
-		382747517AB2B0E5C24E5373D0A0CF50 /* MBAuth.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAuth.html; path = docs/MBAuth.html; sourceTree = "<group>"; };
-		38A8AB14A463320660D2FDD7FFC0D7A6 /* MBDecodable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDecodable.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBDecodable.html; sourceTree = "<group>"; };
-		39263575217BF3DA6C862A40744DB25E /* MBManager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBManager.html; path = docs/Classes/MBManager.html; sourceTree = "<group>"; };
-		3A463F029C016A8975DEB46BCC1F6891 /* MBPagination.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPagination.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBPagination.html; sourceTree = "<group>"; };
-		3AF7A77402666775CD49F4FC70EBBF08 /* MBDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBDecodable.swift; sourceTree = "<group>"; };
-		3D9B20625A98EEC322787E8A2BBD86D9 /* MBAuth.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAuth.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBAuth.html; sourceTree = "<group>"; };
-		3E60E502294358C0576223801347D978 /* MBurgerTokenKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBurgerTokenKeychain.swift; sourceTree = "<group>"; };
-		3EE429714C13120A04A253FF6007466F /* MBDropdownElementOption.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDropdownElementOption.html; path = docs/Classes/MBDropdownElementOption.html; sourceTree = "<group>"; };
-		3FA8F3DF860F71DA4CE65ACD1087F349 /* MBRelationElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBRelationElement.html; path = docs/Classes/MBRelationElement.html; sourceTree = "<group>"; };
-		41201DDD35EF9F42EF54427DB08836AF /* MBManager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBManager.html; path = docs/MBManager.html; sourceTree = "<group>"; };
-		4305A8E3FB58B9AE2897D73FBC1847DB /* MBDropdownElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDropdownElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBDropdownElement.html; sourceTree = "<group>"; };
-		44DE7B99E13A40217AF852D52ACF5298 /* MBResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBResponse.swift; path = MBNetworkingSwift/MBResponse.swift; sourceTree = "<group>"; };
-		4600A5958E9F5867CA3EADDB944C0377 /* MBLegalContract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBLegalContract.swift; sourceTree = "<group>"; };
-		465EE402F69C66F132FD6E1700DDD8DA /* MBPlugin.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPlugin.html; path = docs/Protocols/MBPlugin.html; sourceTree = "<group>"; };
-		469BE888E65075EDE945B73716B0CE34 /* MBPluginsManager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPluginsManager.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBPluginsManager.html; sourceTree = "<group>"; };
-		4724CEB698CF0543C6B95D0435F806D7 /* MBBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBBlock.swift; sourceTree = "<group>"; };
-		47E37684A4AB056AA452CEC33DC9EB01 /* MBElementType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElementType.html; path = docs/Enums/MBElementType.html; sourceTree = "<group>"; };
-		480F1A98F4E8BD94053A1C07F1A3B0E3 /* MBImagesElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBImagesElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBImagesElement.html; sourceTree = "<group>"; };
-		484008E8F528A66FE2ECA72C7F0B7F4A /* MBManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBManager.swift; sourceTree = "<group>"; };
-		48CB3EBB43251C7B03A5753FB369389F /* Public Extension.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Public Extension.html"; path = "docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Public Extension.html"; sourceTree = "<group>"; };
-		49D40425A5A551D01665FC50BE2C8326 /* MBCheckboxElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBCheckboxElement.html; path = docs/Classes/MBCheckboxElement.html; sourceTree = "<group>"; };
-		49D523115D3850F876F78CEFBBC5A1BF /* MBPaginationInfo.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPaginationInfo.html; path = docs/Structs/MBPaginationInfo.html; sourceTree = "<group>"; };
-		49D70C3538DD7CBE7F65E3BCE05FB0AD /* MBPaginationInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBPaginationInfo.swift; sourceTree = "<group>"; };
-		4A0D99AC8A468B1EE8FDBFC722075C33 /* MBSection.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBSection.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBSection.html; sourceTree = "<group>"; };
-		4BC2BD7C9FDF4A2663A821D3D2AC1F72 /* MBMarkdownElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBMarkdownElement.swift; sourceTree = "<group>"; };
+		33A9C26165FB100A39A97A5BEABF9AA7 /* MBParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBParameter.swift; path = MBurgerSwift/MBParameter/MBParameter.swift; sourceTree = "<group>"; };
+		33D15EBFE5FFE17A2CFA76D69E658756 /* MBElementProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBElementProtocol.swift; path = MBurgerSwift/MBElement/MBElementProtocol.swift; sourceTree = "<group>"; };
+		353AECF5CE57403B3BD06A42C20B04F4 /* MBCheckboxElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBCheckboxElement.swift; path = MBurgerSwift/MBElement/MBCheckboxElement.swift; sourceTree = "<group>"; };
+		364402AC3F5A56BFC35885D50013101C /* MBurgerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBurgerSwift.modulemap; sourceTree = "<group>"; };
+		391EA037A43DA5FBDF7AEA4CEF252ADB /* MBNetworkingSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBNetworkingSwift.modulemap; sourceTree = "<group>"; };
+		42491129D5A9BDC1D9ED609D101FE000 /* MBNetworkingSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBNetworkingSwift-dummy.m"; sourceTree = "<group>"; };
+		47E4A60CD2CFEAF5255A95BE862B1141 /* MBUserContractStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBUserContractStatus.swift; path = MBurgerSwift/MBAuth/MBUserContractStatus.swift; sourceTree = "<group>"; };
 		4C2BF2679C4800463E56F9A726CA5D02 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		4C40AC04F6269E78AB02D0302B9813AB /* MBElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBElement.html; sourceTree = "<group>"; };
-		4D8C7E7C9B408EF2AB1D37DF8707CF50 /* MBurgerSwift.tgz */ = {isa = PBXFileReference; includeInIndex = 1; name = MBurgerSwift.tgz; path = docs/docsets/MBurgerSwift.tgz; sourceTree = "<group>"; };
-		4E4FCE55B4965FE7A2798409FCA2624D /* MBDecodable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDecodable.html; path = docs/Protocols/MBDecodable.html; sourceTree = "<group>"; };
-		4F1FEB0DC8C7691048809A1B8B01B072 /* MBProject.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBProject.html; path = docs/MBProject.html; sourceTree = "<group>"; };
-		4FCBDF5DE41586F06A1E6329AD302BAA /* MBElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElement.html; path = docs/MBElement.html; sourceTree = "<group>"; };
-		50434033952B5FEC08B6CAC336CE9AFD /* MBDecodable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDecodable.html; path = docs/MBDecodable.html; sourceTree = "<group>"; };
-		517F2CFACBEFAD208177856E161D8176 /* MBMultipleElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMultipleElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBMultipleElement.html; sourceTree = "<group>"; };
-		5180E159BD1EF37D8F80BC6E8335086E /* MBFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBFile.swift; sourceTree = "<group>"; };
+		4C9F23EA993572467F4E277677FE3D46 /* MBUserPublishedSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBUserPublishedSection.swift; path = MBurgerSwift/MBAuth/MBUserPublishedSection.swift; sourceTree = "<group>"; };
+		4CF0E0A04BE203DFA562015C16CB74A4 /* MBUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBUser.swift; path = MBurgerSwift/MBAuth/MBUser.swift; sourceTree = "<group>"; };
 		51ED043D83B5406166A3D0A35CC0EE22 /* Pods-MBAudience.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MBAudience.modulemap"; sourceTree = "<group>"; };
-		54873DA7A011AA751F45EF22AB137972 /* MBPagination.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPagination.html; path = docs/MBPagination.html; sourceTree = "<group>"; };
-		551F63B8636063CDCF6DFA1EEBC6CEC5 /* MBClient.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBClient.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBClient.html; sourceTree = "<group>"; };
-		55ECA9ABF2B829608D4DA6493E0AAE0F /* Collection.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Collection.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Extensions/Collection.html; sourceTree = "<group>"; };
-		56ADE3C5B122E5D55A008ED34195E905 /* MBBlock.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBBlock.html; path = docs/Classes/MBBlock.html; sourceTree = "<group>"; };
-		57B5255A0B98A9163B414545586EC2A4 /* MBNetworkingSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBNetworkingSwift.release.xcconfig; sourceTree = "<group>"; };
-		58EF938F952C84F0DBBC7B63B4359E14 /* MBMulitpartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBMulitpartFormData.swift; path = MBNetworkingSwift/MBMulitpartFormData.swift; sourceTree = "<group>"; };
-		5A3A1AA45FF51EABF13BE255748A2611 /* MBParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBParameter.swift; sourceTree = "<group>"; };
-		6200405FF6BD5EE70AAD1F3987240D17 /* MBurgerSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MBurgerSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		626D67EF3FBAC49FCA1F893C9B9FF5A8 /* MBElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElement.html; path = docs/Classes/MBElement.html; sourceTree = "<group>"; };
-		6282BB2D199ED1FB69CF2A09EEDC94DB /* MBUserPublishedSection.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUserPublishedSection.html; path = docs/Structs/MBUserPublishedSection.html; sourceTree = "<group>"; };
+		52C3EC51DBAC0E32FDA67F2E86C8B67A /* MBPaginationParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPaginationParameter.swift; path = MBurgerSwift/MBParameter/MBPaginationParameter.swift; sourceTree = "<group>"; };
+		630B4BCB582B75BF3FEA369F1E3B2264 /* MBMediaElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBMediaElement.swift; path = MBurgerSwift/MBElement/MBMediaElement.swift; sourceTree = "<group>"; };
 		652C84349C3673262F0D28DB86673B8C /* MBurgerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBurgerSwift.framework; path = MBurgerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		678D1A918DAE353C6C7811B66BE3E0AD /* MBManager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBManager.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBManager.html; sourceTree = "<group>"; };
-		68144EFF8AC91B38B1EB6DF308AA04C3 /* MBMediaElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMediaElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBMediaElement.html; sourceTree = "<group>"; };
-		69267A49140740B2D2402DACE6422D0F /* MBSortParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBSortParameter.html; path = docs/Structs/MBSortParameter.html; sourceTree = "<group>"; };
-		6EDD3EDA2877827A4BDF617D3701B05D /* MBGeneralParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBGeneralParameter.html; path = docs/Structs/MBGeneralParameter.html; sourceTree = "<group>"; };
-		6EE4ED223DBD7CF9C58E9467225ABFBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		708DD76B12C475DF55EB77D20C07C504 /* MBParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBParameters.swift; path = MBNetworkingSwift/MBParameters.swift; sourceTree = "<group>"; };
-		71B4D08E0D763668F9E7A42F68A9768F /* MBNetworkingSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBNetworkingSwift-prefix.pch"; sourceTree = "<group>"; };
-		71BE5CC46DBB9221C36815491007423B /* MBNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBNetworking.h; path = MBNetworkingSwift/MBNetworking.h; sourceTree = "<group>"; };
-		734B5099B8ABC8B888D184F9307B79FD /* MBRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRequest.swift; path = MBNetworkingSwift/MBRequest.swift; sourceTree = "<group>"; };
-		745396F6948A49CEEA3EA72C7BFFE458 /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/img/spinner.gif; sourceTree = "<group>"; };
-		76303A4AD30B14E4C14A5C15FB622658 /* MBMarkdownElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMarkdownElement.html; path = docs/Classes/MBMarkdownElement.html; sourceTree = "<group>"; };
+		67C09E903A858F20EB5FEE00B8A5604B /* MBAddressElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBAddressElement.swift; path = MBurgerSwift/MBElement/MBAddressElement.swift; sourceTree = "<group>"; };
+		681619528FCFC97365C0B292CEEC1D10 /* MBSortParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBSortParameter.swift; path = MBurgerSwift/MBParameter/MBSortParameter.swift; sourceTree = "<group>"; };
+		6902999BBE45C412F519AEC05D17DD6B /* MBDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDecoder.swift; path = MBurgerSwift/MBDecodable/MBDecoder.swift; sourceTree = "<group>"; };
+		697F5BCCB19F6C64C542E8A521A450D2 /* MBResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBResult.swift; path = MBNetworkingSwift/MBResult.swift; sourceTree = "<group>"; };
 		7698BD2D9AE9E98EA92BDD0DB4CE3E8E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		782254A6ECCE19A8A18B156E4D54E79F /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
-		786F3AFBE5054FCEA0F97FA8754EC44A /* MBPaginationParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPaginationParameter.html; path = docs/Structs/MBPaginationParameter.html; sourceTree = "<group>"; };
-		788FCA957C624869CB5E45AD97BC889E /* MBSortParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBSortParameter.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBSortParameter.html; sourceTree = "<group>"; };
-		78CFC21EFB8D469D5BD896FB6A6023B3 /* MBNetworkingSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBNetworkingSwift-Info.plist"; sourceTree = "<group>"; };
-		7A773937169FF011085D5D699A88A317 /* MBProject.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBProject.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBProject.html; sourceTree = "<group>"; };
-		7B338944DA627A79CAD085FA5FD5CA78 /* MBGeofenceParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBGeofenceParameter.swift; sourceTree = "<group>"; };
-		7C391EFF1F3A2D8E11A7E9F75484DFD5 /* MBProject.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBProject.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBProject.html; sourceTree = "<group>"; };
-		7DCA91AC3FDFFE8B2ECD058B98128BF0 /* MBAuthSocialTokenType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAuthSocialTokenType.html; path = docs/Enums/MBAuthSocialTokenType.html; sourceTree = "<group>"; };
-		7ECA955E463F132193D55FCF1A46EDF7 /* MBDecoder.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDecoder.html; path = docs/Classes/MBDecoder.html; sourceTree = "<group>"; };
-		7F3AA2DE6F4EA275222DB46C0D5CF0A8 /* MBAddressElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAddressElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBAddressElement.html; sourceTree = "<group>"; };
+		7B92C39779EADB2F7C0DA8149C2EB41D /* MBurgerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBurgerSwift.debug.xcconfig; sourceTree = "<group>"; };
+		7CCF054BA807BCFBC67CCE14CE73EEFC /* MBNetworkingSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBNetworkingSwift.debug.xcconfig; sourceTree = "<group>"; };
+		800322BB757039E2A018DD4DB6E6C4E9 /* MBurgerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBurgerSwift-dummy.m"; sourceTree = "<group>"; };
 		803AE12CCC57DE8C84BADF75548452FC /* Pods-MBAudience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBAudience.debug.xcconfig"; sourceTree = "<group>"; };
-		81133ADD6841E72A0CA5229F967665C2 /* MBGeneralElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBGeneralElement.html; path = docs/Classes/MBGeneralElement.html; sourceTree = "<group>"; };
-		81956956E1CCDC229F9B3E4F9E07D5F5 /* MBRelation.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBRelation.html; path = docs/Classes/MBRelation.html; sourceTree = "<group>"; };
-		820FC140CBED7FE43D20A828A070F766 /* MBImagesElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBImagesElement.html; path = docs/Classes/MBImagesElement.html; sourceTree = "<group>"; };
-		8277BD5E3F1E7D3BF0D9C99829184CC4 /* MBPollElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBPollElement.swift; sourceTree = "<group>"; };
-		82F6F15635B67B4899691A299ABE0139 /* MBParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBParameter.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Protocols/MBParameter.html; sourceTree = "<group>"; };
+		80FF3354A6C483BF25A0AB09199F9422 /* MBMulitpartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBMulitpartFormData.swift; path = MBNetworkingSwift/MBMulitpartFormData.swift; sourceTree = "<group>"; };
 		831B775097406DFBE5AEB4DADBB35662 /* Pods-MBAudience-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MBAudience-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8538536D0EB3266A2997D6F913FD23DC /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
+		850DEB75FBCB2A392108DD54D5568526 /* MBPluginsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPluginsManager.swift; path = MBurgerSwift/MBPlugin/MBPluginsManager.swift; sourceTree = "<group>"; };
 		85865617E21156CF99FA2D98871BF898 /* Pods-MBAudience-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MBAudience-acknowledgements.plist"; sourceTree = "<group>"; };
-		8A59E346EE75E8F0A458CFF5DA0F17CA /* MBurgerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBurgerSwift.modulemap; sourceTree = "<group>"; };
-		8BCEDE02F11C558177CD1C419F79A02D /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/img/spinner.gif; sourceTree = "<group>"; };
-		8E2C692B4348B077A325FDAD707EBA17 /* MBGeneralElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBGeneralElement.swift; sourceTree = "<group>"; };
-		8E3DB323AB89393453B14B2621DCC51C /* MBProject.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBProject.html; path = docs/Structs/MBProject.html; sourceTree = "<group>"; };
-		8EE747DBDD6205EDAC3C703305B827E3 /* MBUserContractStatus.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUserContractStatus.html; path = docs/Structs/MBUserContractStatus.html; sourceTree = "<group>"; };
-		8F25690F1C07171E72F69242C47DD62D /* MBUtilities.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUtilities.html; path = docs/MBUtilities.html; sourceTree = "<group>"; };
-		8FF4E12434B34E45B66134457ACD74AA /* MBBlock.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBBlock.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBBlock.html; sourceTree = "<group>"; };
-		90F5B53B4C29D3E3197821EC8E8D6831 /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/js/lunr.min.js; sourceTree = "<group>"; };
-		91241F56AC4F6479E3248EEE29EED38A /* MBManager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBManager.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBManager.html; sourceTree = "<group>"; };
-		9209CE55E292FBCAD207354B30FBD830 /* MBSection.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBSection.html; path = docs/MBSection.html; sourceTree = "<group>"; };
-		93E3A7404EC7BED9ECB1E365F24A3D00 /* MBTextElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBTextElement.swift; sourceTree = "<group>"; };
-		943E3E4C19573495691A27CB5B037092 /* MBMarkdownElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMarkdownElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBMarkdownElement.html; sourceTree = "<group>"; };
-		980C29FC5A08ABBDBCC9A6AD487F446C /* MBClient.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBClient.html; path = docs/Classes/MBClient.html; sourceTree = "<group>"; };
-		9C75B2528E19D22A680B7D3C3BE9AD27 /* MBElementFactory.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElementFactory.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBElementFactory.html; sourceTree = "<group>"; };
-		9CB4CE963E27F0988D59308FFF5021C1 /* MBAddressElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAddressElement.html; path = docs/Classes/MBAddressElement.html; sourceTree = "<group>"; };
-		9D0E95A5A76A1CA4B5955BC5D9E047AD /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
+		8E7521840C3C152388FFEA5C6C938829 /* MBValidation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBValidation.swift; path = MBNetworkingSwift/MBValidation.swift; sourceTree = "<group>"; };
+		9051CF869E07729E83B0F0AC61A08A2E /* MBNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBNetworking.swift; path = MBNetworkingSwift/MBNetworking.swift; sourceTree = "<group>"; };
+		91FAF69A2E83B63D9DBF0B39912C6C86 /* MBColorElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBColorElement.swift; path = MBurgerSwift/MBElement/MBColorElement.swift; sourceTree = "<group>"; };
+		9C789E03664DF4900865072FD00DDA20 /* MBurgerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBurgerSwift.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F60192D65FFC5160E1443FF0F35DCD3 /* MBPluginsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBPluginsManager.swift; sourceTree = "<group>"; };
-		9F8152B3E984FDEF31F733A36A7F091E /* MBPlugin.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPlugin.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Protocols/MBPlugin.html; sourceTree = "<group>"; };
-		9FE4F4E26101A5AA1D1F68F7934FD25B /* MBDropdownElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBDropdownElement.swift; sourceTree = "<group>"; };
-		A000BD3DE3C06295DE34FFEADC0B35FE /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
-		A06D86AA37B4222CDEA53B3FD1C4A604 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
-		A11B07488F534E15DCE68143E6C5A1A7 /* MBMediaElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBMediaElement.swift; sourceTree = "<group>"; };
-		A2ACC5DD7956358BF1FC752B9E0FEBB3 /* MBFilterParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBFilterParameter.html; path = docs/Structs/MBFilterParameter.html; sourceTree = "<group>"; };
-		A34831078467F327D75997605CDBAF5F /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/js/lunr.min.js; sourceTree = "<group>"; };
-		A3F49550C168C810BA8899F9944A5A42 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
-		A7372D40E32F1843F24A5B8E62406779 /* MBValidation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBValidation.swift; path = MBNetworkingSwift/MBValidation.swift; sourceTree = "<group>"; };
-		A777E7704DE95D7E5DB133C925B3FD65 /* MBCheckboxElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBCheckboxElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBCheckboxElement.html; sourceTree = "<group>"; };
-		A8123D98A49BA0035270859C83042A8C /* MBElementProtocol.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElementProtocol.html; path = docs/Protocols/MBElementProtocol.html; sourceTree = "<group>"; };
-		A821F1AE1375535E659B6A232DB34FBA /* MBMediaType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMediaType.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Enums/MBMediaType.html; sourceTree = "<group>"; };
-		A84A7CF46858283B79970A2D91EC29A7 /* MBClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBClient.swift; path = MBurgerSwift/MBClient.swift; sourceTree = "<group>"; };
-		A963BBFE1B311534F261479CEE7F8A94 /* MBAuthSocialTokenType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAuthSocialTokenType.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Enums/MBAuthSocialTokenType.html; sourceTree = "<group>"; };
-		A99AB631A44547AF9B586F9BF082D5F9 /* MBAuth.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAuth.html; path = docs/Structs/MBAuth.html; sourceTree = "<group>"; };
-		AB01E93BB016E50BFCBA71860FA1A185 /* MBMultipleElementOption.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMultipleElementOption.html; path = docs/Classes/MBMultipleElementOption.html; sourceTree = "<group>"; };
-		AB912A3A71E3DA4D2F3606C22A8FF97D /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
-		AC69D7BDBF34F02750D07470C34D1DA0 /* MBMultipleElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMultipleElement.html; path = docs/Classes/MBMultipleElement.html; sourceTree = "<group>"; };
-		AEF719D436AACB408DF7D1E1A31C55E2 /* MBCheckboxElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBCheckboxElement.swift; sourceTree = "<group>"; };
-		B118B0D20DF702F5E92C88FD4262378C /* MBAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBAuth.swift; sourceTree = "<group>"; };
-		B17D0660E690EDC8AF9E7363A6CE5A00 /* MBDropdownElementOption.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDropdownElementOption.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBDropdownElementOption.html; sourceTree = "<group>"; };
-		B2BB8F7908530F01005234B06DE76DD4 /* MBGeneralElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBGeneralElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBGeneralElement.html; sourceTree = "<group>"; };
-		B3066F12E7A6A45E7E19752D18BDD059 /* MBDecoder.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDecoder.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBDecoder.html; sourceTree = "<group>"; };
-		B53A1EBAF396F9FD331CF73371876224 /* MBUtilities.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUtilities.html; path = docs/Classes/MBUtilities.html; sourceTree = "<group>"; };
-		B562EE941C2228FAE5BE773BC974838A /* MBurgerSwift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBurgerSwift.h; path = MBurgerSwift/MBurgerSwift.h; sourceTree = "<group>"; };
-		B59C5061F6B621EE47AF641A921E5E32 /* MBUserPublishedSection.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUserPublishedSection.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBUserPublishedSection.html; sourceTree = "<group>"; };
-		B5C660A36772CA6F0DEE008B7C8E5E86 /* MBurgerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBurgerSwift-prefix.pch"; sourceTree = "<group>"; };
-		B651628FBB764B439A6EE9467B734AA1 /* MBurgerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBurgerSwift-dummy.m"; sourceTree = "<group>"; };
-		B675C89A7080F38C993C7DEA7654E43F /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/js/typeahead.jquery.js; sourceTree = "<group>"; };
-		B810B2DCCB6F4CC31B61F1985084219D /* MBNetworkingSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBNetworkingSwift.debug.xcconfig; sourceTree = "<group>"; };
-		B90B550289DC43D3F6255CBD43624FB8 /* MBFilterParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBFilterParameter.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBFilterParameter.html; sourceTree = "<group>"; };
-		BB682FCDF20F6EA0F439E2150D184104 /* MBDateElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBDateElement.swift; sourceTree = "<group>"; };
-		BB759C65B572F74F80963C664290CA57 /* MBParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBParameter.html; path = docs/Protocols/MBParameter.html; sourceTree = "<group>"; };
-		BCE4733C28FEE504197BD30DF0013306 /* MBurgerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBurgerSwift-umbrella.h"; sourceTree = "<group>"; };
-		BFCE49C094B7029B49FBAB2EF28F84F4 /* MBClient.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBClient.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBClient.html; sourceTree = "<group>"; };
-		C0C859903619A386FD37B93E9D3D1C90 /* MBUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBUser.swift; sourceTree = "<group>"; };
-		C2FD2D22FFBDAAA228E4DE191DD48AB4 /* Collection.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Collection.html; path = docs/Extensions/Collection.html; sourceTree = "<group>"; };
-		C30D8329354433600BEC4E0AA79F4760 /* MBRelationElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBRelationElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBRelationElement.html; sourceTree = "<group>"; };
-		C49DA904BD9E7CED7C3AA62B6F4F5976 /* MBUtilities.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUtilities.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBUtilities.html; sourceTree = "<group>"; };
-		C4BE9347E642E10CB8702F1C6150A01F /* MBPlugin.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPlugin.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBPlugin.html; sourceTree = "<group>"; };
-		C5AD61A4677BA447AAC57DC5533CF82B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/MBurgerSwift.docset/Contents/Info.plist; sourceTree = "<group>"; };
-		C5E369B15970A90E6747B0F55582A26D /* Readme.md */ = {isa = PBXFileReference; includeInIndex = 1; path = Readme.md; sourceTree = "<group>"; };
-		C6E06CE186319DF263493148F8C70BF9 /* MBPaginationInfo.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPaginationInfo.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBPaginationInfo.html; sourceTree = "<group>"; };
-		C88A81EFA57116652C2DB533923C14E8 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
-		C8C827DFAB23331AB3E35BDB048E0B59 /* MBColorElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBColorElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBColorElement.html; sourceTree = "<group>"; };
-		C96B34DF6F7A07A6FDE91DF3408D8C23 /* MBSortParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBSortParameter.swift; sourceTree = "<group>"; };
-		CB46DF0695DE6CF2D02C182CBCD813FD /* MBUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBUtilities.swift; sourceTree = "<group>"; };
-		CC2E401437F66FA4D2B45CFA9B59B47C /* MBSection.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBSection.html; path = docs/Classes/MBSection.html; sourceTree = "<group>"; };
-		CC9AD1F7A8D3EF28851159F1518C32DD /* MBRelation.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBRelation.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBRelation.html; sourceTree = "<group>"; };
-		CF4190407B94ECDB1C2947E74F9AD450 /* MBMultipleElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBMultipleElement.swift; sourceTree = "<group>"; };
-		CFDC2DCB16812F3C9859655F5E81EBF2 /* MBPlugin.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPlugin.html; path = docs/MBPlugin.html; sourceTree = "<group>"; };
-		D1ACFFFC5E3116841CEBBDA2F8FF9E9C /* MBTextElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBTextElement.html; path = docs/Classes/MBTextElement.html; sourceTree = "<group>"; };
-		D259199B8845B911E1E1BEF231EA4CA7 /* MBParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBParameter.html; path = docs/MBParameter.html; sourceTree = "<group>"; };
-		D2B67AC03CA13F67D2D7A449742B9145 /* MBColorElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBColorElement.swift; sourceTree = "<group>"; };
-		D302928D69766E16752D4DC86C3F21C0 /* MBElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBElement.html; sourceTree = "<group>"; };
-		D3185562A4E050714A3CEE93AF2F3E8C /* MBSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBSection.swift; sourceTree = "<group>"; };
-		D3727FF31E72D09C47D2E196B1172C1E /* MBFile.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBFile.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBFile.html; sourceTree = "<group>"; };
-		D4A14793A7F8266A357F7C0158F0D94B /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/js/typeahead.jquery.js; sourceTree = "<group>"; };
-		D4ED3E0A381EE6504E7C03DE98CC7CB7 /* MBMultipleElementOption.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMultipleElementOption.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBMultipleElementOption.html; sourceTree = "<group>"; };
-		D6A4B39BC0DDAF57A304F063D9463725 /* MBDecodable.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDecodable.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Protocols/MBDecodable.html; sourceTree = "<group>"; };
-		D88E360E6C986DB19B9425120B5E82E8 /* MBParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBParameter.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/MBParameter.html; sourceTree = "<group>"; };
-		DB3AA0CC92CA26DBEC2BAA39DBA2C64A /* MBMediaType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMediaType.html; path = docs/Enums/MBMediaType.html; sourceTree = "<group>"; };
-		DB8FF43C4B8C00EACDAC0833E7194AA2 /* MBApiManager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBApiManager.html; path = docs/Classes/MBApiManager.html; sourceTree = "<group>"; };
-		DB9C0E2F1CEB1B8FAF8F81AEFB9751B0 /* MBNetworkingSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBNetworkingSwift.modulemap; sourceTree = "<group>"; };
-		DD2629C504841C24094B5D4F7C6C0E41 /* MBTextElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBTextElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBTextElement.html; sourceTree = "<group>"; };
-		DD76E0869FAC0A72A41BC599EC3D0D2E /* MBGeofenceParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBGeofenceParameter.html; path = docs/Structs/MBGeofenceParameter.html; sourceTree = "<group>"; };
-		DDED00256D15F412B98E0D22213F6798 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
+		A30564BC3C7BAA00035197CA278E2F97 /* MBNetworkingSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBNetworkingSwift-prefix.pch"; sourceTree = "<group>"; };
+		A68FB30A3C00BD5C0D1F3E7355DE14A4 /* MBPaginationInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPaginationInfo.swift; path = MBurgerSwift/MBPagination/MBPaginationInfo.swift; sourceTree = "<group>"; };
+		AA119AB0F8AA6FA4C8F615D71092DAA7 /* MBSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBSection.swift; path = MBurgerSwift/MBSection/MBSection.swift; sourceTree = "<group>"; };
+		AE335EB3058E5852F5A062069EC459B1 /* MBAuthContractAcceptanceParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBAuthContractAcceptanceParameter.swift; path = MBurgerSwift/MBAuth/MBAuthContractAcceptanceParameter.swift; sourceTree = "<group>"; };
+		B0A9DB45105EE8DE72F40AA000281658 /* MBurgerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBurgerSwift-Info.plist"; sourceTree = "<group>"; };
+		B1F6D653A953E392A4BC20E0335C1C94 /* MBBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBBlock.swift; path = MBurgerSwift/MBBlock/MBBlock.swift; sourceTree = "<group>"; };
+		BA69438F9B2C614050C94C305D9B2E07 /* MBClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBClient.swift; path = MBurgerSwift/MBClient.swift; sourceTree = "<group>"; };
+		BCCC2811604E7365A1103F29DD0B7034 /* MBNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBNetworking.h; path = MBNetworkingSwift/MBNetworking.h; sourceTree = "<group>"; };
+		C2C71A2CE47F34D3E626A39C575251F9 /* MBGeneralElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBGeneralElement.swift; path = MBurgerSwift/MBElement/MBGeneralElement.swift; sourceTree = "<group>"; };
+		CF67A14E7797343780DB63993F585ACF /* MBManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBManager.swift; path = MBurgerSwift/MBManager/MBManager.swift; sourceTree = "<group>"; };
+		D4884E368D7BC58EA06F750DE2790D12 /* MBRelationElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRelationElement.swift; path = MBurgerSwift/MBElement/MBRelationElement.swift; sourceTree = "<group>"; };
+		D5B1C5837E09750166B6B9A46FB584CE /* MBTextElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBTextElement.swift; path = MBurgerSwift/MBElement/MBTextElement.swift; sourceTree = "<group>"; };
+		D68360BCBA52ABEA328E44BBB04FD4A0 /* MBMultipleElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBMultipleElement.swift; path = MBurgerSwift/MBElement/MBMultipleElement.swift; sourceTree = "<group>"; };
+		D6BF04E5B4F3DD150C38CA7C58BB8302 /* MBurgerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBurgerSwift-prefix.pch"; sourceTree = "<group>"; };
+		D7083F23E28D46394AD602568A01C680 /* MBDropdownElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDropdownElement.swift; path = MBurgerSwift/MBElement/MBDropdownElement.swift; sourceTree = "<group>"; };
 		DE8DF6FC654FFEFAA8E0C7C6B8DE3BA5 /* Pods-MBAudience-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MBAudience-dummy.m"; sourceTree = "<group>"; };
-		DF0BD52CD6641C108F70C81CBA3F26C7 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
-		E0ADD1524DDBC3936F6A3F288AF4FEA5 /* MBFilterParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBFilterParameter.swift; sourceTree = "<group>"; };
-		E1DD5D943BB8029D1FF7EFE49A38F030 /* MBDateElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDateElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBDateElement.html; sourceTree = "<group>"; };
-		E1ED7A83B74019B6C527F2AAF7727B06 /* MBDropdownElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBDropdownElement.html; path = docs/Classes/MBDropdownElement.html; sourceTree = "<group>"; };
-		E20903814D9D7D233A6F041E26EA9E25 /* MBUserPublishedSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBUserPublishedSection.swift; sourceTree = "<group>"; };
-		E3BE0D4279AF9C07C5036CA7FD5ABB8B /* MBUser.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUser.html; path = docs/Structs/MBUser.html; sourceTree = "<group>"; };
-		E5018D06AA0393003FFA315675ADD640 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
-		E53D5A02EEC806CE4D892632E97DD533 /* MBProject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBProject.swift; sourceTree = "<group>"; };
-		E7358CF68935A35617FAEF84F784A009 /* MBRelationElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBRelationElement.swift; sourceTree = "<group>"; };
-		E80D6FCEFE36544C676E13964B9729D7 /* MBGeofenceParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBGeofenceParameter.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBGeofenceParameter.html; sourceTree = "<group>"; };
-		EC2832F644EFABB074114D6A071B3AE0 /* Public Extension.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Public Extension.html"; path = "docs/Public Extension.html"; sourceTree = "<group>"; };
-		EF1C5BE33ACE5C230CD8D492B4FB6E4C /* MBAuthContractAcceptanceParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBAuthContractAcceptanceParameter.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBAuthContractAcceptanceParameter.html; sourceTree = "<group>"; };
-		EFB76C7C4C4DB509FD4EE330133994C0 /* MBMediaElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBMediaElement.html; path = docs/Classes/MBMediaElement.html; sourceTree = "<group>"; };
-		EFD9CAA1039389AF6412BEC01A351292 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
-		F09440615DE484B638AC6C983898EBBB /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; name = docSet.dsidx; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
-		F0BCC1451ED15AAE3FBAA2B4D1F69A70 /* MBApiManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBApiManager.swift; sourceTree = "<group>"; };
-		F3BD4E18A1ADB0A08639B4551028680A /* MBGeneralParameter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBGeneralParameter.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBGeneralParameter.html; sourceTree = "<group>"; };
-		F64A1D664398D4FEED4D2DDE9518BE86 /* MBBlock.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBBlock.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBBlock.html; sourceTree = "<group>"; };
-		F8C67611A8AE1E7C6C0B26AC2E9EDA62 /* MBElementFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBElementFactory.swift; sourceTree = "<group>"; };
+		DF2561249A313AAABD9CB46B92D87F14 /* MBPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBPlugin.swift; path = MBurgerSwift/MBPlugin/MBPlugin.swift; sourceTree = "<group>"; };
+		E09A8B8DDA9EFB816F5685C177A32D2C /* MBGeofenceParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBGeofenceParameter.swift; path = MBurgerSwift/MBParameter/MBGeofenceParameter.swift; sourceTree = "<group>"; };
+		E1CE1C16B43DC795B25C8C1F7FB1C9EF /* MBDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDecodable.swift; path = MBurgerSwift/MBDecodable/MBDecodable.swift; sourceTree = "<group>"; };
+		E25AD5A5592AB4D667FE16951B31BFA1 /* MBUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBUtilities.swift; path = MBurgerSwift/MBUtilities/MBUtilities.swift; sourceTree = "<group>"; };
+		E2C3DF8C9B436AF4C693081012375D65 /* MBurgerSwift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBurgerSwift.h; path = MBurgerSwift/MBurgerSwift.h; sourceTree = "<group>"; };
+		E2DAE81A19630C46F213E000C6D69B9D /* MBFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBFile.swift; path = MBurgerSwift/MBElement/MBFile.swift; sourceTree = "<group>"; };
+		E392831C7F189553A3EBA67D23C325B7 /* MBNetworkingSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBNetworkingSwift-umbrella.h"; sourceTree = "<group>"; };
+		E3BB226AC6D2868680458D793773DFDD /* MBAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBAuth.swift; path = MBurgerSwift/MBAuth/MBAuth.swift; sourceTree = "<group>"; };
+		E72771D63F773FD5FCC7405B7CEA2F0D /* MBFilterParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBFilterParameter.swift; path = MBurgerSwift/MBParameter/MBFilterParameter.swift; sourceTree = "<group>"; };
+		ECAAA1F49A216D05912B46EAE7456753 /* MBNetworkingSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBNetworkingSwift.release.xcconfig; sourceTree = "<group>"; };
+		F1C7E3D6E3F65442CDEFDFE5ED6921BC /* MBResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBResponse.swift; path = MBNetworkingSwift/MBResponse.swift; sourceTree = "<group>"; };
+		F87C858C788D2D36811098C9D12847FE /* MBNetworkingSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBNetworkingSwift-Info.plist"; sourceTree = "<group>"; };
+		F9978BF96144F0CBBA5F5B1A2806748D /* MBRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRequest.swift; path = MBNetworkingSwift/MBRequest.swift; sourceTree = "<group>"; };
 		F9C7CDD96A63011611E948978B9AE92B /* Pods-MBAudience-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MBAudience-Info.plist"; sourceTree = "<group>"; };
-		FA38FD9DAE55F6779534849F7F4B4C7F /* MBUserContractStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBUserContractStatus.swift; sourceTree = "<group>"; };
-		FA99BE81AE90539D0B08BE7144611A87 /* MBUser.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBUser.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Structs/MBUser.html; sourceTree = "<group>"; };
-		FB2AA594D2A31435D960BC0AAB16B306 /* MBImagesElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBImagesElement.swift; sourceTree = "<group>"; };
 		FCDBB59564B08ACA11028068D7C6A572 /* Pods-MBAudience-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MBAudience-umbrella.h"; sourceTree = "<group>"; };
-		FDACE3E1E589237335D0FCFF2EA66636 /* MBElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBElement.swift; sourceTree = "<group>"; };
-		FE271B2B4EDBF17D163CD98472FB6B13 /* MBPollElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MBPollElement.html; path = docs/docsets/MBurgerSwift.docset/Contents/Resources/Documents/Classes/MBPollElement.html; sourceTree = "<group>"; };
-		FFB01439E3D0952786A16F4EF92E6B8E /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/js/jazzy.search.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,54 +213,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0554381A395B466A8D6E26EB80BC42D5 /* MBurgerSwift */ = {
+		13AEFF2870E6972EE849A9F0CED6DAB8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A84A7CF46858283B79970A2D91EC29A7 /* MBClient.swift */,
-				B562EE941C2228FAE5BE773BC974838A /* MBurgerSwift.h */,
-				74CD82E0D99599FBA434DFECA24988D7 /* MBAuth */,
-				0C397FB5D504A06FE2B6C380048BD591 /* MBBlock */,
-				E6086AA1B06207182F5A58F47371D24E /* MBDecodable */,
-				EFF88A15E4F1E477BA469FA325F2927C /* MBElement */,
-				E8936F6359CF02D83C0C849C9848EA6D /* MBManager */,
-				9345FF799BC72E9E437E15A2E6FF8B5D /* MBPagination */,
-				C06C31D42EBF443F075814D98B96149C /* MBParameter */,
-				A72382D900F978E681064C8EC2F5A602 /* MBPlugin */,
-				E9B15243E596DECDBADDA5AE874274F5 /* MBProject */,
-				546B116C9814ABD5141AE22356465B35 /* MBSection */,
-				79C49E37D7B002284586C65A03DE484C /* MBUtilities */,
-				5708C0E1DF59C0862FEBAC0CD3DA5A43 /* Pod */,
-				85278A286CD5A965A91983D116F50C77 /* Support Files */,
+				C65AC6E7C7CFBDAB2928486CF0CE0587 /* MBNetworkingSwift */,
+				8794501FF323B7BE8CBDB338342A584F /* MBurgerSwift */,
 			);
-			name = MBurgerSwift;
-			path = ../../MBurgerSwift;
-			sourceTree = "<group>";
-		};
-		0C397FB5D504A06FE2B6C380048BD591 /* MBBlock */ = {
-			isa = PBXGroup;
-			children = (
-				4724CEB698CF0543C6B95D0435F806D7 /* MBBlock.swift */,
-			);
-			name = MBBlock;
-			path = MBurgerSwift/MBBlock;
-			sourceTree = "<group>";
-		};
-		15EBD01B50661188368082D014E8BBC0 /* MBNetworkingSwift */ = {
-			isa = PBXGroup;
-			children = (
-				1B1BE50401115854B26C1F7DA796178D /* MBError.swift */,
-				58EF938F952C84F0DBBC7B63B4359E14 /* MBMulitpartFormData.swift */,
-				71BE5CC46DBB9221C36815491007423B /* MBNetworking.h */,
-				227C519F1F30B9101DE003AD2D238B49 /* MBNetworking.swift */,
-				708DD76B12C475DF55EB77D20C07C504 /* MBParameters.swift */,
-				734B5099B8ABC8B888D184F9307B79FD /* MBRequest.swift */,
-				44DE7B99E13A40217AF852D52ACF5298 /* MBResponse.swift */,
-				2ACD1712632394EBFA9BE6CAC6C58249 /* MBResult.swift */,
-				A7372D40E32F1843F24A5B8E62406779 /* MBValidation.swift */,
-				77C7E6BAC8EE4C0577A051DB156424E7 /* Support Files */,
-			);
-			name = MBNetworkingSwift;
-			path = MBNetworkingSwift;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		4AC2D044D4485EE1CF0FE9FEB79F93E5 /* Products */ = {
@@ -429,178 +232,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		546B116C9814ABD5141AE22356465B35 /* MBSection */ = {
-			isa = PBXGroup;
-			children = (
-				D3185562A4E050714A3CEE93AF2F3E8C /* MBSection.swift */,
-			);
-			name = MBSection;
-			path = MBurgerSwift/MBSection;
-			sourceTree = "<group>";
-		};
-		5708C0E1DF59C0862FEBAC0CD3DA5A43 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				03808F37C0B81818E8C0BE7CE7008523 /* badge.svg */,
-				2FB81AC0BFEFD7A900F5C7BEFFC64067 /* carat.png */,
-				EFD9CAA1039389AF6412BEC01A351292 /* carat.png */,
-				55ECA9ABF2B829608D4DA6493E0AAE0F /* Collection.html */,
-				C2FD2D22FFBDAAA228E4DE191DD48AB4 /* Collection.html */,
-				8538536D0EB3266A2997D6F913FD23DC /* dash.png */,
-				DDED00256D15F412B98E0D22213F6798 /* dash.png */,
-				F09440615DE484B638AC6C983898EBBB /* docSet.dsidx */,
-				30D10608BC8273DF27D2BDDCCD4FE9F9 /* gh.png */,
-				DF0BD52CD6641C108F70C81CBA3F26C7 /* gh.png */,
-				A000BD3DE3C06295DE34FFEADC0B35FE /* highlight.css */,
-				A3F49550C168C810BA8899F9944A5A42 /* highlight.css */,
-				013329E16E1709C4FDC7267CB0AB6AAC /* index.html */,
-				18FB7D969F601C052324F6638ECC0806 /* index.html */,
-				C5AD61A4677BA447AAC57DC5533CF82B /* Info.plist */,
-				C88A81EFA57116652C2DB533923C14E8 /* jazzy.css */,
-				AB912A3A71E3DA4D2F3606C22A8FF97D /* jazzy.css */,
-				1537F55BC1CF8DDC4246E83A12E61E3F /* jazzy.js */,
-				782254A6ECCE19A8A18B156E4D54E79F /* jazzy.js */,
-				300506C9C02CA3327AB21F076C05DE70 /* jazzy.search.js */,
-				FFB01439E3D0952786A16F4EF92E6B8E /* jazzy.search.js */,
-				25A8174D5E084613C5C5E4BD84AB9C9B /* jquery.min.js */,
-				9D0E95A5A76A1CA4B5955BC5D9E047AD /* jquery.min.js */,
-				6EE4ED223DBD7CF9C58E9467225ABFBC /* LICENSE */,
-				A34831078467F327D75997605CDBAF5F /* lunr.min.js */,
-				90F5B53B4C29D3E3197821EC8E8D6831 /* lunr.min.js */,
-				7F3AA2DE6F4EA275222DB46C0D5CF0A8 /* MBAddressElement.html */,
-				9CB4CE963E27F0988D59308FFF5021C1 /* MBAddressElement.html */,
-				DB8FF43C4B8C00EACDAC0833E7194AA2 /* MBApiManager.html */,
-				1CF54025B2B80C385514FDBD01530B4F /* MBApiManager.html */,
-				382747517AB2B0E5C24E5373D0A0CF50 /* MBAuth.html */,
-				23163BE8184F4A1DD6E3355C321B5808 /* MBAuth.html */,
-				3D9B20625A98EEC322787E8A2BBD86D9 /* MBAuth.html */,
-				A99AB631A44547AF9B586F9BF082D5F9 /* MBAuth.html */,
-				EF1C5BE33ACE5C230CD8D492B4FB6E4C /* MBAuthContractAcceptanceParameter.html */,
-				0630DE68678AE241D53ADF43960AF357 /* MBAuthContractAcceptanceParameter.html */,
-				A963BBFE1B311534F261479CEE7F8A94 /* MBAuthSocialTokenType.html */,
-				7DCA91AC3FDFFE8B2ECD058B98128BF0 /* MBAuthSocialTokenType.html */,
-				8FF4E12434B34E45B66134457ACD74AA /* MBBlock.html */,
-				56ADE3C5B122E5D55A008ED34195E905 /* MBBlock.html */,
-				04CB3E3BDD85EFD6DC02ECDF833D1B2D /* MBBlock.html */,
-				F64A1D664398D4FEED4D2DDE9518BE86 /* MBBlock.html */,
-				A777E7704DE95D7E5DB133C925B3FD65 /* MBCheckboxElement.html */,
-				49D40425A5A551D01665FC50BE2C8326 /* MBCheckboxElement.html */,
-				980C29FC5A08ABBDBCC9A6AD487F446C /* MBClient.html */,
-				285AEEAD1154D56A90E045A7B681E2C4 /* MBClient.html */,
-				551F63B8636063CDCF6DFA1EEBC6CEC5 /* MBClient.html */,
-				BFCE49C094B7029B49FBAB2EF28F84F4 /* MBClient.html */,
-				C8C827DFAB23331AB3E35BDB048E0B59 /* MBColorElement.html */,
-				156A1B733C21ECF34523010A727356ED /* MBColorElement.html */,
-				E1DD5D943BB8029D1FF7EFE49A38F030 /* MBDateElement.html */,
-				25CCCCDC44AE34AC334B335628D6C26F /* MBDateElement.html */,
-				4E4FCE55B4965FE7A2798409FCA2624D /* MBDecodable.html */,
-				D6A4B39BC0DDAF57A304F063D9463725 /* MBDecodable.html */,
-				50434033952B5FEC08B6CAC336CE9AFD /* MBDecodable.html */,
-				38A8AB14A463320660D2FDD7FFC0D7A6 /* MBDecodable.html */,
-				7ECA955E463F132193D55FCF1A46EDF7 /* MBDecoder.html */,
-				B3066F12E7A6A45E7E19752D18BDD059 /* MBDecoder.html */,
-				4305A8E3FB58B9AE2897D73FBC1847DB /* MBDropdownElement.html */,
-				E1ED7A83B74019B6C527F2AAF7727B06 /* MBDropdownElement.html */,
-				B17D0660E690EDC8AF9E7363A6CE5A00 /* MBDropdownElementOption.html */,
-				3EE429714C13120A04A253FF6007466F /* MBDropdownElementOption.html */,
-				D302928D69766E16752D4DC86C3F21C0 /* MBElement.html */,
-				4C40AC04F6269E78AB02D0302B9813AB /* MBElement.html */,
-				626D67EF3FBAC49FCA1F893C9B9FF5A8 /* MBElement.html */,
-				4FCBDF5DE41586F06A1E6329AD302BAA /* MBElement.html */,
-				9C75B2528E19D22A680B7D3C3BE9AD27 /* MBElementFactory.html */,
-				06B45570FE6624ECC0AC461C95FCC121 /* MBElementFactory.html */,
-				173CF0979BC68C4C5C0FCD7B0778280D /* MBElementProtocol.html */,
-				A8123D98A49BA0035270859C83042A8C /* MBElementProtocol.html */,
-				1C5EAF67B5E402FFA5323D87B124C248 /* MBElementType.html */,
-				47E37684A4AB056AA452CEC33DC9EB01 /* MBElementType.html */,
-				D3727FF31E72D09C47D2E196B1172C1E /* MBFile.html */,
-				0F87DFF326BA9148100C7E6DEC87FAFD /* MBFile.html */,
-				B90B550289DC43D3F6255CBD43624FB8 /* MBFilterParameter.html */,
-				A2ACC5DD7956358BF1FC752B9E0FEBB3 /* MBFilterParameter.html */,
-				81133ADD6841E72A0CA5229F967665C2 /* MBGeneralElement.html */,
-				B2BB8F7908530F01005234B06DE76DD4 /* MBGeneralElement.html */,
-				6EDD3EDA2877827A4BDF617D3701B05D /* MBGeneralParameter.html */,
-				F3BD4E18A1ADB0A08639B4551028680A /* MBGeneralParameter.html */,
-				DD76E0869FAC0A72A41BC599EC3D0D2E /* MBGeofenceParameter.html */,
-				E80D6FCEFE36544C676E13964B9729D7 /* MBGeofenceParameter.html */,
-				480F1A98F4E8BD94053A1C07F1A3B0E3 /* MBImagesElement.html */,
-				820FC140CBED7FE43D20A828A070F766 /* MBImagesElement.html */,
-				2DB122FA790065DC7973E562ED801B90 /* MBLegalContract.html */,
-				0EA3B4631A71FE12C3C32166235E565F /* MBLegalContract.html */,
-				91241F56AC4F6479E3248EEE29EED38A /* MBManager.html */,
-				39263575217BF3DA6C862A40744DB25E /* MBManager.html */,
-				678D1A918DAE353C6C7811B66BE3E0AD /* MBManager.html */,
-				41201DDD35EF9F42EF54427DB08836AF /* MBManager.html */,
-				76303A4AD30B14E4C14A5C15FB622658 /* MBMarkdownElement.html */,
-				943E3E4C19573495691A27CB5B037092 /* MBMarkdownElement.html */,
-				68144EFF8AC91B38B1EB6DF308AA04C3 /* MBMediaElement.html */,
-				EFB76C7C4C4DB509FD4EE330133994C0 /* MBMediaElement.html */,
-				A821F1AE1375535E659B6A232DB34FBA /* MBMediaType.html */,
-				DB3AA0CC92CA26DBEC2BAA39DBA2C64A /* MBMediaType.html */,
-				517F2CFACBEFAD208177856E161D8176 /* MBMultipleElement.html */,
-				AC69D7BDBF34F02750D07470C34D1DA0 /* MBMultipleElement.html */,
-				D4ED3E0A381EE6504E7C03DE98CC7CB7 /* MBMultipleElementOption.html */,
-				AB01E93BB016E50BFCBA71860FA1A185 /* MBMultipleElementOption.html */,
-				54873DA7A011AA751F45EF22AB137972 /* MBPagination.html */,
-				3A463F029C016A8975DEB46BCC1F6891 /* MBPagination.html */,
-				C6E06CE186319DF263493148F8C70BF9 /* MBPaginationInfo.html */,
-				49D523115D3850F876F78CEFBBC5A1BF /* MBPaginationInfo.html */,
-				20C9068B0BCFCED0BF2ED3FB25EDDB05 /* MBPaginationParameter.html */,
-				786F3AFBE5054FCEA0F97FA8754EC44A /* MBPaginationParameter.html */,
-				D88E360E6C986DB19B9425120B5E82E8 /* MBParameter.html */,
-				BB759C65B572F74F80963C664290CA57 /* MBParameter.html */,
-				D259199B8845B911E1E1BEF231EA4CA7 /* MBParameter.html */,
-				82F6F15635B67B4899691A299ABE0139 /* MBParameter.html */,
-				465EE402F69C66F132FD6E1700DDD8DA /* MBPlugin.html */,
-				CFDC2DCB16812F3C9859655F5E81EBF2 /* MBPlugin.html */,
-				C4BE9347E642E10CB8702F1C6150A01F /* MBPlugin.html */,
-				9F8152B3E984FDEF31F733A36A7F091E /* MBPlugin.html */,
-				469BE888E65075EDE945B73716B0CE34 /* MBPluginsManager.html */,
-				3171D012E1C609C338618549AFE90BAA /* MBPluginsManager.html */,
-				344944155C50CAF2EFFFBC89EA352983 /* MBPollElement.html */,
-				FE271B2B4EDBF17D163CD98472FB6B13 /* MBPollElement.html */,
-				4F1FEB0DC8C7691048809A1B8B01B072 /* MBProject.html */,
-				8E3DB323AB89393453B14B2621DCC51C /* MBProject.html */,
-				7C391EFF1F3A2D8E11A7E9F75484DFD5 /* MBProject.html */,
-				7A773937169FF011085D5D699A88A317 /* MBProject.html */,
-				CC9AD1F7A8D3EF28851159F1518C32DD /* MBRelation.html */,
-				81956956E1CCDC229F9B3E4F9E07D5F5 /* MBRelation.html */,
-				C30D8329354433600BEC4E0AA79F4760 /* MBRelationElement.html */,
-				3FA8F3DF860F71DA4CE65ACD1087F349 /* MBRelationElement.html */,
-				CC2E401437F66FA4D2B45CFA9B59B47C /* MBSection.html */,
-				16C1DB49BCCD2CEC08B0DCB31352653D /* MBSection.html */,
-				9209CE55E292FBCAD207354B30FBD830 /* MBSection.html */,
-				4A0D99AC8A468B1EE8FDBFC722075C33 /* MBSection.html */,
-				69267A49140740B2D2402DACE6422D0F /* MBSortParameter.html */,
-				788FCA957C624869CB5E45AD97BC889E /* MBSortParameter.html */,
-				DD2629C504841C24094B5D4F7C6C0E41 /* MBTextElement.html */,
-				D1ACFFFC5E3116841CEBBDA2F8FF9E9C /* MBTextElement.html */,
-				6200405FF6BD5EE70AAD1F3987240D17 /* MBurgerSwift.podspec */,
-				4D8C7E7C9B408EF2AB1D37DF8707CF50 /* MBurgerSwift.tgz */,
-				FA99BE81AE90539D0B08BE7144611A87 /* MBUser.html */,
-				E3BE0D4279AF9C07C5036CA7FD5ABB8B /* MBUser.html */,
-				8EE747DBDD6205EDAC3C703305B827E3 /* MBUserContractStatus.html */,
-				0CF5D74BD0B5BA5FD1EA8CAB8244BBEC /* MBUserContractStatus.html */,
-				B59C5061F6B621EE47AF641A921E5E32 /* MBUserPublishedSection.html */,
-				6282BB2D199ED1FB69CF2A09EEDC94DB /* MBUserPublishedSection.html */,
-				B53A1EBAF396F9FD331CF73371876224 /* MBUtilities.html */,
-				376A879F8937677C69AE34B3BF2D347A /* MBUtilities.html */,
-				C49DA904BD9E7CED7C3AA62B6F4F5976 /* MBUtilities.html */,
-				8F25690F1C07171E72F69242C47DD62D /* MBUtilities.html */,
-				48CB3EBB43251C7B03A5753FB369389F /* Public Extension.html */,
-				EC2832F644EFABB074114D6A071B3AE0 /* Public Extension.html */,
-				C5E369B15970A90E6747B0F55582A26D /* Readme.md */,
-				22B75CB76249C695FE8FA7F048B99E4F /* search.json */,
-				A06D86AA37B4222CDEA53B3FD1C4A604 /* search.json */,
-				745396F6948A49CEEA3EA72C7BFFE458 /* spinner.gif */,
-				8BCEDE02F11C558177CD1C419F79A02D /* spinner.gif */,
-				D4A14793A7F8266A357F7C0158F0D94B /* typeahead.jquery.js */,
-				B675C89A7080F38C993C7DEA7654E43F /* typeahead.jquery.js */,
-				E5018D06AA0393003FFA315675ADD640 /* undocumented.json */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		7245E437C8E1A0BA4C62C67642AE5598 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,44 +242,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		74CD82E0D99599FBA434DFECA24988D7 /* MBAuth */ = {
-			isa = PBXGroup;
-			children = (
-				B118B0D20DF702F5E92C88FD4262378C /* MBAuth.swift */,
-				03DE9B1F77BB7427A27F1FBCC6768F51 /* MBAuthContractAcceptanceParameter.swift */,
-				3E60E502294358C0576223801347D978 /* MBurgerTokenKeychain.swift */,
-				C0C859903619A386FD37B93E9D3D1C90 /* MBUser.swift */,
-				FA38FD9DAE55F6779534849F7F4B4C7F /* MBUserContractStatus.swift */,
-				E20903814D9D7D233A6F041E26EA9E25 /* MBUserPublishedSection.swift */,
-			);
-			name = MBAuth;
-			path = MBurgerSwift/MBAuth;
-			sourceTree = "<group>";
-		};
-		77C7E6BAC8EE4C0577A051DB156424E7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DB9C0E2F1CEB1B8FAF8F81AEFB9751B0 /* MBNetworkingSwift.modulemap */,
-				0C83B6EA6B5A05EF33AEEF065525E18B /* MBNetworkingSwift-dummy.m */,
-				78CFC21EFB8D469D5BD896FB6A6023B3 /* MBNetworkingSwift-Info.plist */,
-				71B4D08E0D763668F9E7A42F68A9768F /* MBNetworkingSwift-prefix.pch */,
-				2DD1CDE69BE0D686C5ACB8C4C45B7ACC /* MBNetworkingSwift-umbrella.h */,
-				B810B2DCCB6F4CC31B61F1985084219D /* MBNetworkingSwift.debug.xcconfig */,
-				57B5255A0B98A9163B414545586EC2A4 /* MBNetworkingSwift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MBNetworkingSwift";
-			sourceTree = "<group>";
-		};
-		79C49E37D7B002284586C65A03DE484C /* MBUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				CB46DF0695DE6CF2D02C182CBCD813FD /* MBUtilities.swift */,
-			);
-			name = MBUtilities;
-			path = MBurgerSwift/MBUtilities;
-			sourceTree = "<group>";
-		};
 		7A3D7028BA2C814BCDE1ED81E4780C93 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -657,28 +250,71 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		85278A286CD5A965A91983D116F50C77 /* Support Files */ = {
+		8794501FF323B7BE8CBDB338342A584F /* MBurgerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				8A59E346EE75E8F0A458CFF5DA0F17CA /* MBurgerSwift.modulemap */,
-				B651628FBB764B439A6EE9467B734AA1 /* MBurgerSwift-dummy.m */,
-				1177290B1A356CF42B83177CBCB9DF5D /* MBurgerSwift-Info.plist */,
-				B5C660A36772CA6F0DEE008B7C8E5E86 /* MBurgerSwift-prefix.pch */,
-				BCE4733C28FEE504197BD30DF0013306 /* MBurgerSwift-umbrella.h */,
-				12811E2BE89BA4B6B862BF1A14A256B2 /* MBurgerSwift.debug.xcconfig */,
-				338E2E4ECE040A5FF274B92AAA1B4A9E /* MBurgerSwift.release.xcconfig */,
+				67C09E903A858F20EB5FEE00B8A5604B /* MBAddressElement.swift */,
+				094ABC42225593B8B6E69CE337ABE502 /* MBApiManager.swift */,
+				E3BB226AC6D2868680458D793773DFDD /* MBAuth.swift */,
+				AE335EB3058E5852F5A062069EC459B1 /* MBAuthContractAcceptanceParameter.swift */,
+				B1F6D653A953E392A4BC20E0335C1C94 /* MBBlock.swift */,
+				353AECF5CE57403B3BD06A42C20B04F4 /* MBCheckboxElement.swift */,
+				BA69438F9B2C614050C94C305D9B2E07 /* MBClient.swift */,
+				91FAF69A2E83B63D9DBF0B39912C6C86 /* MBColorElement.swift */,
+				2567F853B1EA8AAEC9384C8677CE6079 /* MBDateElement.swift */,
+				E1CE1C16B43DC795B25C8C1F7FB1C9EF /* MBDecodable.swift */,
+				6902999BBE45C412F519AEC05D17DD6B /* MBDecoder.swift */,
+				D7083F23E28D46394AD602568A01C680 /* MBDropdownElement.swift */,
+				282D314D10C95982C6E004AF495D94B5 /* MBElement.swift */,
+				06FFCF8EFB4387884716C98AFC9C1B38 /* MBElementFactory.swift */,
+				33D15EBFE5FFE17A2CFA76D69E658756 /* MBElementProtocol.swift */,
+				E2DAE81A19630C46F213E000C6D69B9D /* MBFile.swift */,
+				E72771D63F773FD5FCC7405B7CEA2F0D /* MBFilterParameter.swift */,
+				C2C71A2CE47F34D3E626A39C575251F9 /* MBGeneralElement.swift */,
+				0573CCCA791E83750F7738BD0C73B471 /* MBGeneralParameter.swift */,
+				E09A8B8DDA9EFB816F5685C177A32D2C /* MBGeofenceParameter.swift */,
+				183FF41B011E777AB7018928B96DD2AE /* MBImagesElement.swift */,
+				284F4DEFFDFED240DE07B57D276E4EDF /* MBLegalContract.swift */,
+				CF67A14E7797343780DB63993F585ACF /* MBManager.swift */,
+				0D27CDAB7BF38821A29FFF4DBA406F27 /* MBMarkdownElement.swift */,
+				630B4BCB582B75BF3FEA369F1E3B2264 /* MBMediaElement.swift */,
+				D68360BCBA52ABEA328E44BBB04FD4A0 /* MBMultipleElement.swift */,
+				A68FB30A3C00BD5C0D1F3E7355DE14A4 /* MBPaginationInfo.swift */,
+				52C3EC51DBAC0E32FDA67F2E86C8B67A /* MBPaginationParameter.swift */,
+				33A9C26165FB100A39A97A5BEABF9AA7 /* MBParameter.swift */,
+				DF2561249A313AAABD9CB46B92D87F14 /* MBPlugin.swift */,
+				850DEB75FBCB2A392108DD54D5568526 /* MBPluginsManager.swift */,
+				074E12732B966494BC9370DABC6C3C32 /* MBPollElement.swift */,
+				2FB6D33A75FB1BEEF8D9048299438ECF /* MBProject.swift */,
+				D4884E368D7BC58EA06F750DE2790D12 /* MBRelationElement.swift */,
+				AA119AB0F8AA6FA4C8F615D71092DAA7 /* MBSection.swift */,
+				681619528FCFC97365C0B292CEEC1D10 /* MBSortParameter.swift */,
+				D5B1C5837E09750166B6B9A46FB584CE /* MBTextElement.swift */,
+				E2C3DF8C9B436AF4C693081012375D65 /* MBurgerSwift.h */,
+				31248B99B5DE4985A7E6FFE4BA78B973 /* MBurgerTokenKeychain.swift */,
+				4CF0E0A04BE203DFA562015C16CB74A4 /* MBUser.swift */,
+				47E4A60CD2CFEAF5255A95BE862B1141 /* MBUserContractStatus.swift */,
+				4C9F23EA993572467F4E277677FE3D46 /* MBUserPublishedSection.swift */,
+				E25AD5A5592AB4D667FE16951B31BFA1 /* MBUtilities.swift */,
+				A55D6C53C2F51650D815196B9C92317A /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../MBAudience/Pods/Target Support Files/MBurgerSwift";
+			name = MBurgerSwift;
+			path = MBurgerSwift;
 			sourceTree = "<group>";
 		};
-		9345FF799BC72E9E437E15A2E6FF8B5D /* MBPagination */ = {
+		A55D6C53C2F51650D815196B9C92317A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				49D70C3538DD7CBE7F65E3BCE05FB0AD /* MBPaginationInfo.swift */,
+				364402AC3F5A56BFC35885D50013101C /* MBurgerSwift.modulemap */,
+				800322BB757039E2A018DD4DB6E6C4E9 /* MBurgerSwift-dummy.m */,
+				B0A9DB45105EE8DE72F40AA000281658 /* MBurgerSwift-Info.plist */,
+				D6BF04E5B4F3DD150C38CA7C58BB8302 /* MBurgerSwift-prefix.pch */,
+				2165804F4649425C4D00977D476F32D5 /* MBurgerSwift-umbrella.h */,
+				7B92C39779EADB2F7C0DA8149C2EB41D /* MBurgerSwift.debug.xcconfig */,
+				9C789E03664DF4900865072FD00DDA20 /* MBurgerSwift.release.xcconfig */,
 			);
-			name = MBPagination;
-			path = MBurgerSwift/MBPagination;
+			name = "Support Files";
+			path = "../Target Support Files/MBurgerSwift";
 			sourceTree = "<group>";
 		};
 		A5EE15D26FA64077DEC43DCB9C4E2B4A /* Frameworks */ = {
@@ -690,70 +326,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A72382D900F978E681064C8EC2F5A602 /* MBPlugin */ = {
+		B380A219090DFEE1FFAE2CAACB4DCB59 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				20DBD520A369A4150241038DA60EF293 /* MBPlugin.swift */,
-				9F60192D65FFC5160E1443FF0F35DCD3 /* MBPluginsManager.swift */,
+				391EA037A43DA5FBDF7AEA4CEF252ADB /* MBNetworkingSwift.modulemap */,
+				42491129D5A9BDC1D9ED609D101FE000 /* MBNetworkingSwift-dummy.m */,
+				F87C858C788D2D36811098C9D12847FE /* MBNetworkingSwift-Info.plist */,
+				A30564BC3C7BAA00035197CA278E2F97 /* MBNetworkingSwift-prefix.pch */,
+				E392831C7F189553A3EBA67D23C325B7 /* MBNetworkingSwift-umbrella.h */,
+				7CCF054BA807BCFBC67CCE14CE73EEFC /* MBNetworkingSwift.debug.xcconfig */,
+				ECAAA1F49A216D05912B46EAE7456753 /* MBNetworkingSwift.release.xcconfig */,
 			);
-			name = MBPlugin;
-			path = MBurgerSwift/MBPlugin;
+			name = "Support Files";
+			path = "../Target Support Files/MBNetworkingSwift";
 			sourceTree = "<group>";
 		};
-		C06C31D42EBF443F075814D98B96149C /* MBParameter */ = {
+		C65AC6E7C7CFBDAB2928486CF0CE0587 /* MBNetworkingSwift */ = {
 			isa = PBXGroup;
 			children = (
-				E0ADD1524DDBC3936F6A3F288AF4FEA5 /* MBFilterParameter.swift */,
-				043D0DE1D8EB49666D9E78A8A56318B3 /* MBGeneralParameter.swift */,
-				7B338944DA627A79CAD085FA5FD5CA78 /* MBGeofenceParameter.swift */,
-				29DD85B67544DD419D5D6F45ECB96577 /* MBPaginationParameter.swift */,
-				5A3A1AA45FF51EABF13BE255748A2611 /* MBParameter.swift */,
-				C96B34DF6F7A07A6FDE91DF3408D8C23 /* MBSortParameter.swift */,
+				1734986C155DFFE2E4E0F83A2FD3142A /* MBError.swift */,
+				80FF3354A6C483BF25A0AB09199F9422 /* MBMulitpartFormData.swift */,
+				BCCC2811604E7365A1103F29DD0B7034 /* MBNetworking.h */,
+				9051CF869E07729E83B0F0AC61A08A2E /* MBNetworking.swift */,
+				120CF645D15FB5D216D8E6912E45A85A /* MBParameters.swift */,
+				F9978BF96144F0CBBA5F5B1A2806748D /* MBRequest.swift */,
+				F1C7E3D6E3F65442CDEFDFE5ED6921BC /* MBResponse.swift */,
+				697F5BCCB19F6C64C542E8A521A450D2 /* MBResult.swift */,
+				8E7521840C3C152388FFEA5C6C938829 /* MBValidation.swift */,
+				B380A219090DFEE1FFAE2CAACB4DCB59 /* Support Files */,
 			);
-			name = MBParameter;
-			path = MBurgerSwift/MBParameter;
+			name = MBNetworkingSwift;
+			path = MBNetworkingSwift;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				FB4994F216F6F21E1150682759688327 /* Development Pods */,
 				A5EE15D26FA64077DEC43DCB9C4E2B4A /* Frameworks */,
-				FFE337CA1B0F6EC916C3A1A9A463030E /* Pods */,
+				13AEFF2870E6972EE849A9F0CED6DAB8 /* Pods */,
 				4AC2D044D4485EE1CF0FE9FEB79F93E5 /* Products */,
 				7A3D7028BA2C814BCDE1ED81E4780C93 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		E6086AA1B06207182F5A58F47371D24E /* MBDecodable */ = {
-			isa = PBXGroup;
-			children = (
-				3AF7A77402666775CD49F4FC70EBBF08 /* MBDecodable.swift */,
-				19E70D1FAA6824D922201FD1A05D6856 /* MBDecoder.swift */,
-			);
-			name = MBDecodable;
-			path = MBurgerSwift/MBDecodable;
-			sourceTree = "<group>";
-		};
-		E8936F6359CF02D83C0C849C9848EA6D /* MBManager */ = {
-			isa = PBXGroup;
-			children = (
-				F0BCC1451ED15AAE3FBAA2B4D1F69A70 /* MBApiManager.swift */,
-				484008E8F528A66FE2ECA72C7F0B7F4A /* MBManager.swift */,
-			);
-			name = MBManager;
-			path = MBurgerSwift/MBManager;
-			sourceTree = "<group>";
-		};
-		E9B15243E596DECDBADDA5AE874274F5 /* MBProject */ = {
-			isa = PBXGroup;
-			children = (
-				4600A5958E9F5867CA3EADDB944C0377 /* MBLegalContract.swift */,
-				E53D5A02EEC806CE4D892632E97DD533 /* MBProject.swift */,
-			);
-			name = MBProject;
-			path = MBurgerSwift/MBProject;
 			sourceTree = "<group>";
 		};
 		EC422C7A7E6D73A83B151B6276628764 /* Pods-MBAudience */ = {
@@ -770,47 +384,6 @@
 			);
 			name = "Pods-MBAudience";
 			path = "Target Support Files/Pods-MBAudience";
-			sourceTree = "<group>";
-		};
-		EFF88A15E4F1E477BA469FA325F2927C /* MBElement */ = {
-			isa = PBXGroup;
-			children = (
-				240CA515BD6B68EB2CA3C49B592F29BC /* MBAddressElement.swift */,
-				AEF719D436AACB408DF7D1E1A31C55E2 /* MBCheckboxElement.swift */,
-				D2B67AC03CA13F67D2D7A449742B9145 /* MBColorElement.swift */,
-				BB682FCDF20F6EA0F439E2150D184104 /* MBDateElement.swift */,
-				9FE4F4E26101A5AA1D1F68F7934FD25B /* MBDropdownElement.swift */,
-				FDACE3E1E589237335D0FCFF2EA66636 /* MBElement.swift */,
-				F8C67611A8AE1E7C6C0B26AC2E9EDA62 /* MBElementFactory.swift */,
-				26C3FDD68F2564BDDF9375E675E022D6 /* MBElementProtocol.swift */,
-				5180E159BD1EF37D8F80BC6E8335086E /* MBFile.swift */,
-				8E2C692B4348B077A325FDAD707EBA17 /* MBGeneralElement.swift */,
-				FB2AA594D2A31435D960BC0AAB16B306 /* MBImagesElement.swift */,
-				4BC2BD7C9FDF4A2663A821D3D2AC1F72 /* MBMarkdownElement.swift */,
-				A11B07488F534E15DCE68143E6C5A1A7 /* MBMediaElement.swift */,
-				CF4190407B94ECDB1C2947E74F9AD450 /* MBMultipleElement.swift */,
-				8277BD5E3F1E7D3BF0D9C99829184CC4 /* MBPollElement.swift */,
-				E7358CF68935A35617FAEF84F784A009 /* MBRelationElement.swift */,
-				93E3A7404EC7BED9ECB1E365F24A3D00 /* MBTextElement.swift */,
-			);
-			name = MBElement;
-			path = MBurgerSwift/MBElement;
-			sourceTree = "<group>";
-		};
-		FB4994F216F6F21E1150682759688327 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0554381A395B466A8D6E26EB80BC42D5 /* MBurgerSwift */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		FFE337CA1B0F6EC916C3A1A9A463030E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				15EBD01B50661188368082D014E8BBC0 /* MBNetworkingSwift */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -857,8 +430,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				BB967DC12D9B17FF60AE8219CCCF35E8 /* PBXTargetDependency */,
-				77C92CD940218050656AF32EAA0CE603 /* PBXTargetDependency */,
+				9EFC75BD59ABD1D54F37EF455150C808 /* PBXTargetDependency */,
+				B198A5CB0CB608785A8E569AFC87009F /* PBXTargetDependency */,
 			);
 			name = "Pods-MBAudience";
 			productName = "Pods-MBAudience";
@@ -888,14 +461,14 @@
 			buildConfigurationList = 19BF6CB032E11A130A9D0B25E166ED56 /* Build configuration list for PBXNativeTarget "MBurgerSwift" */;
 			buildPhases = (
 				9BC390B6CB27531305DD0AA5F9329F19 /* Headers */,
-				56A8A6268FA466B9842A1A309B6B6360 /* Sources */,
+				090A6B1DFA0854DD00626CA1414AF7FF /* Sources */,
 				DC9AA49D121E9761D0B026E1FDDE771A /* Frameworks */,
 				4FB8B8D0ED2CE1E5473E52D64FD85005 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C0A0819F0B7DC311E9B22EA96010B66F /* PBXTargetDependency */,
+				9AFF8FB982EEF5CB4AC102D947F338CD /* PBXTargetDependency */,
 			);
 			name = MBurgerSwift;
 			productName = MBurgerSwift;
@@ -956,61 +529,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		090A6B1DFA0854DD00626CA1414AF7FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5F78EC39DF6CEC92DA3F67F96B8EBC /* MBAddressElement.swift in Sources */,
+				317F2BF2145207523BBBCE0DF1296FE0 /* MBApiManager.swift in Sources */,
+				8A7EB1D7ECDC0F8569291DCEF2362949 /* MBAuth.swift in Sources */,
+				FCD0DC7D8860348C3C89261668EA3220 /* MBAuthContractAcceptanceParameter.swift in Sources */,
+				E603F5C152CE01618E90FE72B7F6C401 /* MBBlock.swift in Sources */,
+				2870308DDA78E76BD51EDDBBC4B06FCC /* MBCheckboxElement.swift in Sources */,
+				EC4F54001D20F19A0449704166F5AB71 /* MBClient.swift in Sources */,
+				44E8B02A4595736B5DB7A61B852BD98F /* MBColorElement.swift in Sources */,
+				9564F4C9D75BF14A086EC20079D40E8B /* MBDateElement.swift in Sources */,
+				C63D0613B1D999DBF077FD04DA3CAE4C /* MBDecodable.swift in Sources */,
+				14C31438270FC08A4F78D985ABC1AED9 /* MBDecoder.swift in Sources */,
+				89D6BD85AAF830B94BE579C89C889100 /* MBDropdownElement.swift in Sources */,
+				9927E93C8055976389207499FEDEE2A0 /* MBElement.swift in Sources */,
+				4BF999983A98A45F70DDFBB4C2260600 /* MBElementFactory.swift in Sources */,
+				FE62A8218B048B045A32983537909FB8 /* MBElementProtocol.swift in Sources */,
+				FF1D5C7AF0A4E54E3EA306E79CD16C9C /* MBFile.swift in Sources */,
+				C60BBF3AF00645DE53845BB18F188BEF /* MBFilterParameter.swift in Sources */,
+				E54E000780333C40CFEAC144E9EA8A75 /* MBGeneralElement.swift in Sources */,
+				9DF41AA8F1ECAE49551049C28297F29F /* MBGeneralParameter.swift in Sources */,
+				0DD9170A57BEE3FC689E882B07F225EA /* MBGeofenceParameter.swift in Sources */,
+				BC3A9A95A2076D370156CAA82CB89D4F /* MBImagesElement.swift in Sources */,
+				0E1D6DA4CAC063703DD7849915E63BF8 /* MBLegalContract.swift in Sources */,
+				B6130782C3294BAA212F9A48F196B7B6 /* MBManager.swift in Sources */,
+				D84F11127B06960E412848D906192903 /* MBMarkdownElement.swift in Sources */,
+				B1FF5D45AAB8D953AC62F193C8DC64D0 /* MBMediaElement.swift in Sources */,
+				8545CF50400FC2B204C74BD960E80483 /* MBMultipleElement.swift in Sources */,
+				FD70ED0E372C817152CE3388BD48CAC1 /* MBPaginationInfo.swift in Sources */,
+				156044746F509732FEFF758B0672A6DA /* MBPaginationParameter.swift in Sources */,
+				EFE901DEFB658030B188D2E5FBD7B546 /* MBParameter.swift in Sources */,
+				6FB45713B540AB804C4ED79DCE0DEB03 /* MBPlugin.swift in Sources */,
+				EEB1239A2C52224CE3207B65EF566BF2 /* MBPluginsManager.swift in Sources */,
+				A22E5CFF5B024B39CF49973C6BD92DB2 /* MBPollElement.swift in Sources */,
+				5D5554FB2B98427A26EB08C118FC0B85 /* MBProject.swift in Sources */,
+				6AC6D729712ADB2CC0CA88BB9B0EAE06 /* MBRelationElement.swift in Sources */,
+				E40ED1554512DA892AB4F82B9F944F6D /* MBSection.swift in Sources */,
+				13D022EBD6FD0334607283517D3C7273 /* MBSortParameter.swift in Sources */,
+				00A8AAD322D6959ED1782A3C1B76433B /* MBTextElement.swift in Sources */,
+				E368C02D471B864735771772E8930A77 /* MBurgerSwift-dummy.m in Sources */,
+				369A849D62DCF911E644D1AF5A5D3FFA /* MBurgerTokenKeychain.swift in Sources */,
+				A66626CAE0AA95DAB81CD516D5B5465F /* MBUser.swift in Sources */,
+				3396E36B2D0CB16356BB27FD8330884A /* MBUserContractStatus.swift in Sources */,
+				A5256FAA71CA083EB98B687C23827399 /* MBUserPublishedSection.swift in Sources */,
+				84A6D4437F40FB98FA769C72B13CCE89 /* MBUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33F0A0C007128D86ACDBF46D1A5FF8B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BE3C4603650A4DD807B744E9222B71F1 /* Pods-MBAudience-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		56A8A6268FA466B9842A1A309B6B6360 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B60153B704E4032A810F500EF4133A4 /* MBAddressElement.swift in Sources */,
-				8961111ECD9BDFFBB84FB9EE9B2E63F8 /* MBApiManager.swift in Sources */,
-				3C6F69B5A8BC38C3835F3E7BC1290C8C /* MBAuth.swift in Sources */,
-				E53D985351B08559238EE50056D3998C /* MBAuthContractAcceptanceParameter.swift in Sources */,
-				92824D01C0D009FC4E44195957BC3ED3 /* MBBlock.swift in Sources */,
-				834050A34D594CFF08F9D2BEA1758A91 /* MBCheckboxElement.swift in Sources */,
-				2167032E13F97BBDD9A68C2827056CEB /* MBClient.swift in Sources */,
-				9330E439B35F1E6E0645D5A7DB7CE48C /* MBColorElement.swift in Sources */,
-				8CD0D62BB36CDDB22F151B0BC232F436 /* MBDateElement.swift in Sources */,
-				58CB1C76CA4E431E05A07183CC1D8E04 /* MBDecodable.swift in Sources */,
-				E13863B316B3CC30510714694E6AEEA2 /* MBDecoder.swift in Sources */,
-				14AEC1F3D3076EF0BEEE112A1B9DCD8C /* MBDropdownElement.swift in Sources */,
-				4C1CC47DC0C33F8F1CD53A66D324BD2E /* MBElement.swift in Sources */,
-				CAE13D059C0590A820E821559C079624 /* MBElementFactory.swift in Sources */,
-				22B70A32FA6EE4D7B09C14D52BDE423B /* MBElementProtocol.swift in Sources */,
-				8E98133F6486A0EE61A736CD49CB972C /* MBFile.swift in Sources */,
-				BE6F9EFF540A68119C41290AFF908802 /* MBFilterParameter.swift in Sources */,
-				5929003DCBD45B040D78F5C52AFAC2CA /* MBGeneralElement.swift in Sources */,
-				3576F36F4408D5D855AE3B495E4838E7 /* MBGeneralParameter.swift in Sources */,
-				B7628ED423D0687FE5F814B7F583C738 /* MBGeofenceParameter.swift in Sources */,
-				28EBAE0A4ECF4C8D8902DFAF5ED0AADB /* MBImagesElement.swift in Sources */,
-				DF701654F8393726DA338D835AD8362C /* MBLegalContract.swift in Sources */,
-				EB9F8619AEEA2C85528D38A12A3F2133 /* MBManager.swift in Sources */,
-				5FC243CBD7FE3586731990C97E80D195 /* MBMarkdownElement.swift in Sources */,
-				F5554DF0A0A937ED27F36C49AACD856F /* MBMediaElement.swift in Sources */,
-				6276AAB33B4ACE8BF12633A7A19DE1E4 /* MBMultipleElement.swift in Sources */,
-				99D5E6CECE5A0D36EACCEA54E5780A2F /* MBPaginationInfo.swift in Sources */,
-				0B720447EE3BD243A4FB885B1F7CF38D /* MBPaginationParameter.swift in Sources */,
-				6EC95C904863DB89F6FB447952D1812A /* MBParameter.swift in Sources */,
-				1A427932D0E1764F82F1EA5026A22323 /* MBPlugin.swift in Sources */,
-				D2E65346CFE7C04CFB64055915CD48E5 /* MBPluginsManager.swift in Sources */,
-				FD5C967AAA287C0040BD5BFD2E1B2767 /* MBPollElement.swift in Sources */,
-				1759FC8326E4EC1FA52684E42BE24B24 /* MBProject.swift in Sources */,
-				F15B34EEA1DFA5376FFEA4AC90FE2BB4 /* MBRelationElement.swift in Sources */,
-				EB7CF9DEF89B0C7BE06B30BF940A70A2 /* MBSection.swift in Sources */,
-				AF1D6254EAD27CDB271F4B5F0547430C /* MBSortParameter.swift in Sources */,
-				F363DC82259119EFB6DCDDF09292B82F /* MBTextElement.swift in Sources */,
-				68BC39B1E2B43441E6F6597D473CFD39 /* MBurgerSwift-dummy.m in Sources */,
-				A8D696564B1C39C3A05B6B6891A8B0A2 /* MBurgerTokenKeychain.swift in Sources */,
-				91E69A0D2221D1F55FF5B462CE86A2BC /* MBUser.swift in Sources */,
-				0302587B8F92E3C9E41E4895AFA1C840 /* MBUserContractStatus.swift in Sources */,
-				D0E914175C578A4D40CFAE3AD6CE356A /* MBUserPublishedSection.swift in Sources */,
-				83924D4B719DF2D2B726219C0CC640F0 /* MBUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,23 +606,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		77C92CD940218050656AF32EAA0CE603 /* PBXTargetDependency */ = {
+		9AFF8FB982EEF5CB4AC102D947F338CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBNetworkingSwift;
+			target = 761641A2390A4CA7AEB55C51CA789C90 /* MBNetworkingSwift */;
+			targetProxy = 80884B9AF951686DE26FDB2F198E7A99 /* PBXContainerItemProxy */;
+		};
+		9EFC75BD59ABD1D54F37EF455150C808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBNetworkingSwift;
+			target = 761641A2390A4CA7AEB55C51CA789C90 /* MBNetworkingSwift */;
+			targetProxy = E595CC667B99E6D4ABB21FAAD118BF58 /* PBXContainerItemProxy */;
+		};
+		B198A5CB0CB608785A8E569AFC87009F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBurgerSwift;
 			target = 8DBD1EB833A242D1B4C867B0058BA435 /* MBurgerSwift */;
-			targetProxy = 591D9F8DD8BB6D41FC7165C067558198 /* PBXContainerItemProxy */;
-		};
-		BB967DC12D9B17FF60AE8219CCCF35E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MBNetworkingSwift;
-			target = 761641A2390A4CA7AEB55C51CA789C90 /* MBNetworkingSwift */;
-			targetProxy = 74AC35B70548F7A09995CAF6BD2CD8F7 /* PBXContainerItemProxy */;
-		};
-		C0A0819F0B7DC311E9B22EA96010B66F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MBNetworkingSwift;
-			target = 761641A2390A4CA7AEB55C51CA789C90 /* MBNetworkingSwift */;
-			targetProxy = BA586D2587A5FE6CD65C882DB2B9B5EA /* PBXContainerItemProxy */;
+			targetProxy = CA84A4CF2CC4A6719D4C1B42D6251C65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1155,7 +728,7 @@
 		};
 		D172623500ECEB5D944902B2E0BBB01F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 338E2E4ECE040A5FF274B92AAA1B4A9E /* MBurgerSwift.release.xcconfig */;
+			baseConfigurationReference = 9C789E03664DF4900865072FD00DDA20 /* MBurgerSwift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1294,7 +867,7 @@
 		};
 		DF59BDC136BCCCF80A4520C91109D1B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B810B2DCCB6F4CC31B61F1985084219D /* MBNetworkingSwift.debug.xcconfig */;
+			baseConfigurationReference = 7CCF054BA807BCFBC67CCE14CE73EEFC /* MBNetworkingSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1330,7 +903,7 @@
 		};
 		F4AD809B9DAB08806924433FE480E99C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57B5255A0B98A9163B414545586EC2A4 /* MBNetworkingSwift.release.xcconfig */;
+			baseConfigurationReference = ECAAA1F49A216D05912B46EAE7456753 /* MBNetworkingSwift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1367,7 +940,7 @@
 		};
 		F64CBBB2DAE5C1DA765D5DC5ED17B001 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12811E2BE89BA4B6B862BF1A14A256B2 /* MBurgerSwift.debug.xcconfig */;
+			baseConfigurationReference = 7B92C39779EADB2F7C0DA8149C2EB41D /* MBurgerSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
