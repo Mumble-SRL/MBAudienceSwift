@@ -9,22 +9,22 @@
 import UIKit
 
 class MBAudienceTag: NSObject {
-    @objc let key: String!
+    @objc let tag: String!
     @objc var value: String!
     
-    @objc init(key: String, value: String!) {
-        self.key = key
+    @objc init(tag: String, value: String!) {
+        self.tag = tag
         self.value = value
     }
     
     convenience init (dictionary: [String: String]) {
-        let key = dictionary["key"] ?? ""
+        let tag = dictionary["tag"] ?? ""
         let value = dictionary["value"] ?? ""
-        self.init(key: key, value: value)
+        self.init(tag: tag, value: value)
     }
     
     func toDictionary() -> [String: String] {
-        return ["key": key, "value": value]
+        return ["tag": tag, "value": value]
     }
     
 }

@@ -20,7 +20,7 @@ public protocol MBAudienceDelegate: class {
 }
 
 /// This is the plugin class for MBurger that implements the audience functionality, you can use this to target content to specific users or groups of users, based on their in app behavior. Audience data are updated at every startup, and when the app enters foreground, using the `applicationWillEnterFroreground` notification
-public class MBAudience: NSObject, MBPluginProtocol {
+public class MBAudience: NSObject, MBPlugin {
     
     /// Initializes the plugin and do the startup work, increment the session and update the metadata. You can optionally pass a delegate that will be informed when the data are sent successfully or if the data sync fails.
     /// - Parameters:
@@ -36,17 +36,17 @@ public class MBAudience: NSObject, MBPluginProtocol {
     
     /// Set the tag with a key and a value, if a tag with that key already exists its value is replaced by the new value. After setting the new tag the new audience data are sent to the server.
     /// - Parameters:
-    ///   - key: The key of the tag.
+    ///   - tag: The tag.
     ///   - value: The value of the tag.
-    public static func setTag(withKey key: String, value: String) {
-        MBAudienceManager.shared.setTag(key: key, value: value)
+    public static func setTag(_ tag: String, value: String) {
+        MBAudienceManager.shared.setTag(tag, value: value)
     }
     
     /// Removes the tag with the specified key and syncs audience data with the server.
     /// - Parameters:
     ///   - key: The key of the tag that needs to be removed.
-    public static func removeTag(withKey key: String) {
-        MBAudienceManager.shared.removeTag(key: key)
+    public static func removeTag(_ tag: String) {
+        MBAudienceManager.shared.removeTag(tag)
     }
     
     // MARK: - Custom id
@@ -62,7 +62,6 @@ public class MBAudience: NSObject, MBPluginProtocol {
     public static func removeCustomId() {
         MBAudienceManager.shared.setCustomId(nil)
     }
-    
     
     /// Retrieves the current saved custom id.
     /// - Returns: The current saved custom id.
@@ -104,6 +103,14 @@ public class MBAudience: NSObject, MBPluginProtocol {
         MBAudienceManager.shared.stopLocationUpdates()
     }
     
+    /// Updates current user location with the parameters passed and calls the api to update the device data.
+    /// - Parameters:
+    ///   - latitude: Current latitude
+    ///   - longitude: Current longitude
+    public static func setCurrentLocation(latitude: Double, longitude: Double) {
+        MBAudienceManager.shared.setCurrentLocation(latitude: latitude, longitude: longitude)
+    }
+
     // MARK: - Notifications
     
     /// Calling this function when your app delegate receives `didRegisterForRemoteNotifications` will trigger an update of the metadata, so the value of the field `push_enabled` will be always fresh.
@@ -118,6 +125,16 @@ public class MBAudience: NSObject, MBPluginProtocol {
     ///   - error: The error returned by `didFailToRegisterForRemoteNotifications` (Not used at the moment).
     public static func didFailToRegisterForRemoteNotifications(withError error: Error) {
         MBAudienceManager.shared.updateMetadata()
+    }
+
+    /// Returns the current session tracked by `MBAudience`
+    public static func currentSession() -> Int {
+        return MBAudienceManager.shared.currentSession
+    }
+    
+    /// The date of the last session
+    public static func startSessionDate(forSession session: Int) -> Date? {
+        return MBAudienceManager.shared.startSessionDate(forSession: session)
     }
 
     // MARK: - Delegate

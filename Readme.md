@@ -92,13 +92,13 @@ You can set tags to assign to a user/device (e.g. if user has done an action set
 To set a tag:
 
 ```swift
-MBAudience.setTag(withKey: "KEY", value: "VALUE")
+MBAudience.setTag("TAG", value: "VALUE")
 ```
 
 To remove it:
 
 ```swift
-MBAudience.removeTag(withKey: "KEY")
+MBAudience.removeTag("TAG")
 ```
 
 ## Custom Id

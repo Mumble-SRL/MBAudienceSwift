@@ -48,6 +48,11 @@ internal class MBAudienceManager: NSObject {
         }
     }
     
+    func setCurrentLocation(latitude: Double, longitude: Double) {
+        currentLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        updateLocation()
+    }
+    
     // MARK: - Sessions
     
     func incrementSession() {
@@ -76,7 +81,7 @@ internal class MBAudienceManager: NSObject {
         }
     }
     
-    private func startSessionDate(forSession session: Int) -> Date? {
+    internal func startSessionDate(forSession session: Int) -> Date? {
         let key = sessionDateKey(forSession: session)
         let date = UserDefaults.standard.object(forKey: key) as? Date
         return date
@@ -111,9 +116,9 @@ internal class MBAudienceManager: NSObject {
                 parameters["sessions"] = NSNumber(value: strongSelf.currentSession).stringValue
                 
                 parameters["sessions_time"] = floor(strongSelf.totalSessionTime())
-                let lastSession = strongSelf.currentSession - 1
-                if let lastSesssionDate = strongSelf.startSessionDate(forSession: lastSession) {
-                    parameters["last_session"] = floor(lastSesssionDate.timeIntervalSince1970)
+                let currentSession = strongSelf.currentSession
+                if let currentSessionDate = strongSelf.startSessionDate(forSession: currentSession) {
+                    parameters["last_session"] = floor(currentSessionDate.timeIntervalSince1970)
                 } else {
                     parameters["last_session"] = 0
                 }
@@ -144,9 +149,9 @@ internal class MBAudienceManager: NSObject {
                                      development: MBManager.shared.development,
                                      success: { _ in
                                         strongSelf.delegate?.audienceDataSent()
-                }) { error in
+                }, failure: { error in
                     strongSelf.delegate?.audienceDataFailed(error: error)
-                }
+                })
             })
         }
     }
@@ -155,25 +160,28 @@ internal class MBAudienceManager: NSObject {
         guard let currentLocation = currentLocation else {
             return
         }
+        
+        MBPluginsManager.locationDataUpdated(latitude: currentLocation.latitude,
+                                             longitude: currentLocation.longitude)
         var parameters = [String: AnyHashable]()
         parameters["latitude"] = currentLocation.latitude.truncate(places: 8)
         parameters["longitude"] = currentLocation.longitude.truncate(places: 8)
         DispatchQueue.global(qos: .utility).async {
             MBApiManager.request(withToken: MBManager.shared.apiToken,
                                  locale: MBManager.shared.localeString,
-                                 apiName: "devices",
+                                 apiName: "locations",
                                  method: .post,
                                  parameters: parameters,
                                  development: MBManager.shared.development,
                                  success: { _ in
                                     self.delegate?.audienceDataSent()
-            }) { error in
+            }, failure: { error in
                 self.delegate?.audienceDataFailed(error: error)
-            }
+            })
         }
     }
     
-    //MARK: - Sessions
+    // MARK: - Sessions
     
     @objc private func startSession() {
         if startSessionDate != nil {
@@ -219,26 +227,28 @@ extension MBAudienceManager: CLLocationManagerDelegate {
 extension MBAudienceManager {
     // MARK: - Tags
     
-    func setTag(key: String, value: String) {
+    func setTag(_ tag: String, value: String) {
         var newTags = getTags() ?? []
-        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
+        if let indexFound = newTags.firstIndex(where: {$0.tag == tag}) {
             let tag = newTags[indexFound]
             tag.value = value
             newTags[indexFound] = tag
         } else {
-            newTags.append(MBAudienceTag(key: key, value: value))
+            newTags.append(MBAudienceTag(tag: tag, value: value))
         }
         saveNewTags(tags: newTags)
         updateMetadata()
+        MBPluginsManager.tagChanged(tag: tag, value: value)
     }
     
-    func removeTag(key: String) {
+    func removeTag(_ tag: String) {
         var newTags = getTags() ?? []
-        if let indexFound = newTags.firstIndex(where: {$0.key == key}) {
+        if let indexFound = newTags.firstIndex(where: {$0.tag == tag}) {
             newTags.remove(at: indexFound)
         }
         saveNewTags(tags: newTags)
         updateMetadata()
+        MBPluginsManager.tagChanged(tag: tag, value: nil)
     }
     
     private func saveNewTags(tags: [MBAudienceTag]) {
