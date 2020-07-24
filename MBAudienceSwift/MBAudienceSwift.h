@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 //! Project version number for MBAudienceSwift.
-FOUNDATION_EXPORT double MBAudienceVersionNumber;
+FOUNDATION_EXPORT double MBAudienceSwiftVersionNumber;
 
 //! Project version string for MBAudienceSwift.
-FOUNDATION_EXPORT const unsigned char MBAudienceVersionString[];
+FOUNDATION_EXPORT const unsigned char MBAudienceSwiftVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MBAudienceSwift/PublicHeader.h>
 

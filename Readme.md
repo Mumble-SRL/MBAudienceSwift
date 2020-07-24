@@ -8,7 +8,16 @@ MBAudienceSwift is a plugin libary for [MBurger](https://mburger.cloud), that le
 
 # Installation
 
-# Installation with CocoaPods
+## Swift Package Manager
+
+With Xcode 11 you can start using [Swift Package Manager](https://swift.org/package-manager/) to add **MBAudienceSwift** to your project. Follow those simple steps:
+
+* In Xcode go to File > Swift Packages > Add Package Dependency.
+* Enter `https://github.com/Mumble-SRL/MBAudienceSwift.git` in the "Choose Package Repository" dialog and press Next.
+* Specify the version using rule "Up to Next Major" with "1.0.1" as its earliest version and press Next.
+* Xcode will try to resolving the version, after this, you can choose the `MBAudienceSwift` library and add it to your app target.
+
+# CocoaPods
 
 CocoaPods is a dependency manager for iOS, which automates and simplifies the process of using 3rd-party libraries in your projects. You can install CocoaPods with the following command:
 
@@ -36,6 +45,13 @@ $ pod install
 ```
 
 CocoaPods is the preferred methot to install the library.
+
+## Chartage
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate MBudienceSwift into your Xcode project using Carthage, specify it in your Cartfile:
+
+```
+github "Mumble-SRL/MBudienceSwift"
+```
 
 # Manual installation
 

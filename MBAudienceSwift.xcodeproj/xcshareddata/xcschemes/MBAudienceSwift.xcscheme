@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ECC82422245090AF00578A96"
-               BuildableName = "MBAudience.framework"
-               BlueprintName = "MBAudience"
-               ReferencedContainer = "container:MBAudience.xcodeproj">
+               BuildableName = "MBAudienceSwift.framework"
+               BlueprintName = "MBAudienceSwift"
+               ReferencedContainer = "container:MBAudienceSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ECC82422245090AF00578A96"
-            BuildableName = "MBAudience.framework"
-            BlueprintName = "MBAudience"
-            ReferencedContainer = "container:MBAudience.xcodeproj">
+            BuildableName = "MBAudienceSwift.framework"
+            BlueprintName = "MBAudienceSwift"
+            ReferencedContainer = "container:MBAudienceSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
