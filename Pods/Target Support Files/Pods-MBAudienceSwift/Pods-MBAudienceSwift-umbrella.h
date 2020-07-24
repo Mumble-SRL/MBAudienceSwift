@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MBAudienceVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MBAudienceVersionString[];
+FOUNDATION_EXPORT double Pods_MBAudienceSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MBAudienceSwiftVersionString[];
 

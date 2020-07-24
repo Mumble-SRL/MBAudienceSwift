@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83F4505223EEE773242BE231 /* Pods_MBAudience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF06FDD357EF84FBA1296FF9 /* Pods_MBAudience.framework */; };
-		ECC82427245090AF00578A96 /* MBAudience.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC82425245090AF00578A96 /* MBAudience.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E93F15D777EBAA74F5B8F284 /* Pods_MBAudienceSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53706EDAEA9B38BA1D406F5E /* Pods_MBAudienceSwift.framework */; };
+		ECC82427245090AF00578A96 /* MBAudienceSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC82425245090AF00578A96 /* MBAudienceSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECC82430245090BA00578A96 /* MBAudience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8241C2450885000578A96 /* MBAudience.swift */; };
 		ECC82431245090BA00578A96 /* MBAudienceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC823F82450562500578A96 /* MBAudienceManager.swift */; };
 		ECC82432245090BA00578A96 /* MBAudienceTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC823F92450562500578A96 /* MBAudienceTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		114D0072DBFD101BF04EA72E /* Pods-MBAudience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAudience.debug.xcconfig"; path = "Target Support Files/Pods-MBAudience/Pods-MBAudience.debug.xcconfig"; sourceTree = "<group>"; };
-		D4DE027A290A2AB41BAC0A91 /* Pods-MBAudience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAudience.release.xcconfig"; path = "Target Support Files/Pods-MBAudience/Pods-MBAudience.release.xcconfig"; sourceTree = "<group>"; };
+		3F0CF92F30CE2CD024002FF0 /* Pods-MBAudienceSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAudienceSwift.debug.xcconfig"; path = "Target Support Files/Pods-MBAudienceSwift/Pods-MBAudienceSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		53706EDAEA9B38BA1D406F5E /* Pods_MBAudienceSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBAudienceSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABAA5DB258F9FC790816E26 /* Pods-MBAudienceSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAudienceSwift.release.xcconfig"; path = "Target Support Files/Pods-MBAudienceSwift/Pods-MBAudienceSwift.release.xcconfig"; sourceTree = "<group>"; };
 		ECC823F82450562500578A96 /* MBAudienceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBAudienceManager.swift; sourceTree = "<group>"; };
 		ECC823F92450562500578A96 /* MBAudienceTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBAudienceTag.swift; sourceTree = "<group>"; };
 		ECC8241C2450885000578A96 /* MBAudience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBAudience.swift; sourceTree = "<group>"; };
-		ECC82423245090AF00578A96 /* MBAudience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBAudience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECC82425245090AF00578A96 /* MBAudience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAudience.h; sourceTree = "<group>"; };
+		ECC82423245090AF00578A96 /* MBAudienceSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBAudienceSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC82425245090AF00578A96 /* MBAudienceSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAudienceSwift.h; sourceTree = "<group>"; };
 		ECC82426245090AF00578A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF06FDD357EF84FBA1296FF9 /* Pods_MBAudience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBAudience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F4505223EEE773242BE231 /* Pods_MBAudience.framework in Frameworks */,
+				E93F15D777EBAA74F5B8F284 /* Pods_MBAudienceSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +41,7 @@
 		17F20182DC48A6F7A156C196 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EF06FDD357EF84FBA1296FF9 /* Pods_MBAudience.framework */,
+				53706EDAEA9B38BA1D406F5E /* Pods_MBAudienceSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -49,8 +49,8 @@
 		767F46BEA8147EA0AFB923AE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				114D0072DBFD101BF04EA72E /* Pods-MBAudience.debug.xcconfig */,
-				D4DE027A290A2AB41BAC0A91 /* Pods-MBAudience.release.xcconfig */,
+				3F0CF92F30CE2CD024002FF0 /* Pods-MBAudienceSwift.debug.xcconfig */,
+				EABAA5DB258F9FC790816E26 /* Pods-MBAudienceSwift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -58,7 +58,7 @@
 		ECC823D6245055F400578A96 = {
 			isa = PBXGroup;
 			children = (
-				ECC82424245090AF00578A96 /* MBAudience */,
+				ECC82424245090AF00578A96 /* MBAudienceSwift */,
 				ECC823E0245055F400578A96 /* Products */,
 				767F46BEA8147EA0AFB923AE /* Pods */,
 				17F20182DC48A6F7A156C196 /* Frameworks */,
@@ -68,21 +68,21 @@
 		ECC823E0245055F400578A96 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECC82423245090AF00578A96 /* MBAudience.framework */,
+				ECC82423245090AF00578A96 /* MBAudienceSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ECC82424245090AF00578A96 /* MBAudience */ = {
+		ECC82424245090AF00578A96 /* MBAudienceSwift */ = {
 			isa = PBXGroup;
 			children = (
-				ECC82425245090AF00578A96 /* MBAudience.h */,
+				ECC82425245090AF00578A96 /* MBAudienceSwift.h */,
 				ECC82426245090AF00578A96 /* Info.plist */,
 				ECC8241C2450885000578A96 /* MBAudience.swift */,
 				ECC823F82450562500578A96 /* MBAudienceManager.swift */,
 				ECC823F92450562500578A96 /* MBAudienceTag.swift */,
 			);
-			path = MBAudience;
+			path = MBAudienceSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,16 +92,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC82427245090AF00578A96 /* MBAudience.h in Headers */,
+				ECC82427245090AF00578A96 /* MBAudienceSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		ECC82422245090AF00578A96 /* MBAudience */ = {
+		ECC82422245090AF00578A96 /* MBAudienceSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECC8242C245090AF00578A96 /* Build configuration list for PBXNativeTarget "MBAudience" */;
+			buildConfigurationList = ECC8242C245090AF00578A96 /* Build configuration list for PBXNativeTarget "MBAudienceSwift" */;
 			buildPhases = (
 				B14B3529DE40C1A57F4A2A17 /* [CP] Check Pods Manifest.lock */,
 				ECC8241E245090AF00578A96 /* Headers */,
@@ -114,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = MBAudience;
+			name = MBAudienceSwift;
 			productName = MBAudienceSwift;
-			productReference = ECC82423245090AF00578A96 /* MBAudience.framework */;
+			productReference = ECC82423245090AF00578A96 /* MBAudienceSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ECC823DA245055F400578A96 /* Build configuration list for PBXProject "MBAudience" */;
+			buildConfigurationList = ECC823DA245055F400578A96 /* Build configuration list for PBXProject "MBAudienceSwift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ECC82422245090AF00578A96 /* MBAudience */,
+				ECC82422245090AF00578A96 /* MBAudienceSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -178,7 +178,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MBAudience-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MBAudienceSwift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -335,7 +335,7 @@
 		};
 		ECC8242D245090AF00578A96 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114D0072DBFD101BF04EA72E /* Pods-MBAudience.debug.xcconfig */;
+			baseConfigurationReference = 3F0CF92F30CE2CD024002FF0 /* Pods-MBAudienceSwift.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -344,8 +344,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MBAudience/Info.plist;
+				INFOPLIST_FILE = MBAudienceSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -353,7 +354,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mumble.MBAudience;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MBAudienceSwift;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -365,7 +366,7 @@
 		};
 		ECC8242E245090AF00578A96 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4DE027A290A2AB41BAC0A91 /* Pods-MBAudience.release.xcconfig */;
+			baseConfigurationReference = EABAA5DB258F9FC790816E26 /* Pods-MBAudienceSwift.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -374,8 +375,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MBAudience/Info.plist;
+				INFOPLIST_FILE = MBAudienceSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +385,7 @@
 				);
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mumble.MBAudience;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MBAudienceSwift;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -396,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ECC823DA245055F400578A96 /* Build configuration list for PBXProject "MBAudience" */ = {
+		ECC823DA245055F400578A96 /* Build configuration list for PBXProject "MBAudienceSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECC823F1245055F600578A96 /* Debug */,
@@ -405,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECC8242C245090AF00578A96 /* Build configuration list for PBXNativeTarget "MBAudience" */ = {
+		ECC8242C245090AF00578A96 /* Build configuration list for PBXNativeTarget "MBAudienceSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECC8242D245090AF00578A96 /* Debug */,
