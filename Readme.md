@@ -50,7 +50,7 @@ CocoaPods is the preferred methot to install the library.
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate MBudienceSwift into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```
-github "Mumble-SRL/MBudienceSwift"
+github "Mumble-SRL/MBAudienceSwift"
 ```
 
 # Manual installation
