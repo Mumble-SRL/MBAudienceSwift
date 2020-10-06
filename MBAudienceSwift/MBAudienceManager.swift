@@ -136,10 +136,10 @@ internal class MBAudienceManager: NSObject {
                 }
                 
                 if let tags = strongSelf.getTagsAsDictionaries() {
-                    if let jsonData = try? JSONSerialization.data(withJSONObject: tags, options: []) {
-                        parameters["tags"] = String(data: jsonData, encoding: .utf8)
-                    }
+                    parameters["tags"] = tags
                 }
+                
+                parameters["platform"] = "ios"
                 
                 MBApiManager.request(withToken: MBManager.shared.apiToken,
                                      locale: MBManager.shared.localeString,
