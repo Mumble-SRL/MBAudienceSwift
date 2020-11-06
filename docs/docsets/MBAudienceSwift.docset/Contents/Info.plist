@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>CFBundleIdentifier</key>
-      <string>com.jazzy.mbaudience</string>
+      <string>com.jazzy.mbaudienceswift</string>
     <key>CFBundleName</key>
-      <string>MBAudience</string>
+      <string>MBAudienceSwift</string>
     <key>DocSetPlatformFamily</key>
-      <string>mbaudience</string>
+      <string>mbaudienceswift</string>
     <key>isDashDocset</key>
       <true/>
     <key>dashIndexFilePath</key>

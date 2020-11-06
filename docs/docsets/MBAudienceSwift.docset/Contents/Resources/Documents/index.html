@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MBAudience  Reference</title>
+    <title>MBAudienceSwift  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -15,12 +15,12 @@
   <body>
 
 
-    <a title="MBAudience  Reference"></a>
+    <a title="MBAudienceSwift  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          MBAudience 0.1 Docs
+          MBAudienceSwift 0.1 Docs
         </a>
          (100% documented)
       </p>
@@ -41,9 +41,9 @@
     </header>
 
     <p class="breadcrumbs">
-      <a class="breadcrumb" href="index.html">MBAudience Reference</a>
+      <a class="breadcrumb" href="index.html">MBAudienceSwift Reference</a>
       <img class="carat" src="img/carat.png" />
-      MBAudience  Reference
+      MBAudienceSwift  Reference
     </p>
 
     <div class="content-wrapper">
@@ -67,14 +67,26 @@
         <section class="section">
           <div class="section-content top-matter">
             
-            <p><img src="https://img.shields.io/badge/documentation-100%25-brightgreen.svg" alt="Test Status">
-<img src="https://img.shields.io/badge/pod-v1.0.2-blue.svg" alt="License: MIT">
-<a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg" alt="CocoaPods"></a></p>
+            <p><a href="https://github.com/Mumble-SRL/MBAudienceSwift/tree/master/docs"><img src="https://img.shields.io/badge/documentation-100%25-brightgreen.svg" alt="Documentation"></a>
+<a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat" alt=""></a>
+<img src="https://img.shields.io/badge/pod-v0.1.2-blue.svg" alt="CocoaPods">
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg" alt="License"></a></p>
 <h1 id='mbaudienceswift' class='heading'>MBAudienceSwift</h1>
 
 <p>MBAudienceSwift is a plugin libary for <a href="https://mburger.cloud">MBurger</a>, that lets you track user data and behavior inside your and to target messages only to specific users or groups of users. This plugin is often used with the <a href="https://github.com/Mumble-SRL/MBMessagesSwift">MBMessagesSwift</a> plugin to being able to send push and messages only to targeted users.</p>
 <h1 id='installation' class='heading'>Installation</h1>
-<h1 id='installation-with-cocoapods' class='heading'>Installation with CocoaPods</h1>
+<h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
+
+<p>With Xcode 11 you can start using <a href="https://swift.org/package-manager/">Swift Package Manager</a> to add <strong>MBAudienceSwift</strong> to your project. Follow those simple steps:</p>
+
+<ul>
+<li>In Xcode go to File &gt; Swift Packages &gt; Add Package Dependency.</li>
+<li>Enter <code>https://github.com/Mumble-SRL/MBAudienceSwift.git</code> in the &ldquo;Choose Package Repository&rdquo; dialog and press Next.</li>
+<li>Specify the version using rule &ldquo;Up to Next Major&rdquo; with &ldquo;1.0.1&rdquo; as its earliest version and press Next.</li>
+<li>Xcode will try to resolving the version, after this, you can choose the <code>MBAudienceSwift</code> library and add it to your app target.</li>
+</ul>
+<h1 id='cocoapods' class='heading'>CocoaPods</h1>
 
 <p>CocoaPods is a dependency manager for iOS, which automates and simplifies the process of using 3rd-party libraries in your projects. You can install CocoaPods with the following command:</p>
 <pre class="highlight ruby"><code><span class="err">$</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">cocoapods</span>
@@ -95,9 +107,14 @@
 </code></pre>
 
 <p>CocoaPods is the preferred methot to install the library.</p>
+<h2 id='chartage' class='heading'>Chartage</h2>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate MBudienceSwift into your Xcode project using Carthage, specify it in your Cartfile:</p>
+<pre class="highlight plaintext"><code>github "Mumble-SRL/MBAudienceSwift"
+</code></pre>
 <h1 id='manual-installation' class='heading'>Manual installation</h1>
 
-<p>To install the library manually drag and drop the folder <code><a href="Classes/MBAudience.html">MBAudience</a></code> to your project structure in XCode. </p>
+<p>To install the library manually drag and drop the folder <code>MBAudienceSwift</code> to your project structure in XCode. </p>
 
 <p>Note that <code>MBAudienceSwift</code> has <code>MBurgerSwift (1.0.5)</code> and <code>MPushSwift (0.2.12)</code> as dependencies, so you have to install also those libraries.</p>
 <h1 id='initialization' class='heading'>Initialization</h1>
@@ -142,11 +159,11 @@
 <p>You can set tags to assign to a user/device (e.g. if user has done an action set a tag), so you can target those users later:</p>
 
 <p>To set a tag:</p>
-<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">setTag</span><span class="p">(</span><span class="nv">withKey</span><span class="p">:</span> <span class="s">"KEY"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="s">"VALUE"</span><span class="p">)</span>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">setTag</span><span class="p">(</span><span class="s">"TAG"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="s">"VALUE"</span><span class="p">)</span>
 </code></pre>
 
 <p>To remove it:</p>
-<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">removeTag</span><span class="p">(</span><span class="nv">withKey</span><span class="p">:</span> <span class="s">"KEY"</span><span class="p">)</span>
+<pre class="highlight swift"><code><span class="kt">MBAudience</span><span class="o">.</span><span class="nf">removeTag</span><span class="p">(</span><span class="s">"TAG"</span><span class="p">)</span>
 </code></pre>
 <h2 id='custom-id' class='heading'>Custom Id</h2>
 
@@ -195,8 +212,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-05-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2020 <a class="link" href="https://mumbleideas.it/" target="_blank" rel="external">Mumble</a>. All rights reserved. (Last updated: 2020-07-24)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

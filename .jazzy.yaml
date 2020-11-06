@@ -1,16 +1,16 @@
 clean: true
 objc: false
 readme: Readme.md
-framework_root: MBAudience
-module: MBAudience
+framework_root: MBAudienceSwift
+module: MBAudienceSwift
 module_version: 0.1
 sdk: iphonesimulator
 
 xcodebuild_arguments:
     - "-workspace"
-    - "MBAudience.xcworkspace"
+    - "MBAudienceSwift.xcworkspace"
     - "-scheme"
-    - "MBAudience"
+    - "MBAudienceSwift"
 
 author: Mumble
 author_url: https://mumbleideas.it/
