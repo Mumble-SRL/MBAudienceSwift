@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MBAudienceSwift"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "MBurger audience plugin."
   s.swift_version = '4.2'
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { git: 'https://github.com/Mumble-SRL/MBAudienceSwift.git', tag: '0.1.3' }
+  s.source       = { git: 'https://github.com/Mumble-SRL/MBAudienceSwift.git', tag: '0.1.4' }
   s.source_files = "MBAudienceSwift/*.{h,m,swift}", "MBAudienceSwift/**/*.{h,m,swift}"
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
